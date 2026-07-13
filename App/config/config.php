@@ -27,21 +27,9 @@ return [
                 'view' => 'contacto.php',
                 'resources' => 'src/assets/js/contacto.js',
             ],
-            '/es/quienes-somos' => [
+            '/es/mis-proyectos' => [
                 'view' => 'equipo.php',
                 'resources' => 'src/assets/js/equipo.js',
-            ],
-            '/es/servicios' => [
-                'view' => 'productos.php',
-                'resources' => 'src/assets/js/productos.js',
-            ],
-            '/es/servicios/pintor' => [
-                'view' => 'producto1.php',
-                'resources' => 'src/assets/js/producto.js',
-            ],
-            '/es/servicios/restaurador-muebles' => [
-                'view' => 'producto2.php',
-                'resources' => 'src/assets/js/producto.js',
             ],
             '/es/legal' => [
                 'view' => 'legal.php',
@@ -49,7 +37,7 @@ return [
             ],
             '/es/404' => [
                 'view' => '404.php',
-                'resources' => 'src/assets/js/inicio.js',
+                'resources' => 'src/assets/js/404.js',
             ],
         ],
         'eu' => [
@@ -61,21 +49,9 @@ return [
                 'view' => 'contacto.php',
                 'resources' => 'src/assets/js/contacto.js',
             ],
-            '/eu/nortzuk-gara' => [
+            '/eu/nere-proiektuak' => [
                 'view' => 'equipo.php',
                 'resources' => 'src/assets/js/equipo.js',
-            ],
-            '/eu/zerbitzuak' => [
-                'view' => 'productos.php',
-                'resources' => 'src/assets/js/productos.js',
-            ],
-            '/eu/zerbitzuak/pintorea' => [
-                'view' => 'producto1.php',
-                'resources' => 'src/assets/js/producto.js',
-            ],
-            '/eu/zerbitzuak/altzari-zaharberritzailea' => [
-                'view' => 'producto2.php',
-                'resources' => 'src/assets/js/producto.js',
             ],
             '/eu/lege-oharra' => [
                 'view' => 'legal.php',
@@ -83,7 +59,7 @@ return [
             ],
             '/eu/404' => [
                 'view' => '404.php',
-                'resources' => 'src/assets/js/inicio.js',
+                'resources' => 'src/assets/js/404.js',
             ],
         ]
     ],
