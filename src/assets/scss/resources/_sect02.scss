@@ -1,0 +1,59 @@
+@use 'config'  as c;
+
+.sect02{    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    row-gap: 3rem;
+    @media only screen and (min-width:c.$tablet){
+        row-gap: 4rem;
+    }
+    @media only screen and (min-width:c.$desktop){
+        row-gap: 6rem;
+    }
+    .sect02-content{
+        width: 100%;
+        padding: 0 c.$padMin;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        row-gap: 3rem;
+        @media only screen and (min-width:c.$tablet){
+            width: 80%;
+            padding: initial;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: stretch;
+            column-gap: 1rem;
+        }
+        ul{            
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            row-gap: 1rem;
+            @media only screen and (min-width:c.$tablet){
+                width: 50%;
+            }
+            a{
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: center;
+                column-gap: 2rem;
+                span{
+                    font-size: clamp(1rem, 2vw, 1.5rem);
+                    color: c.$color01;
+                }
+            }
+        }
+        iframe{
+            @media only screen and (min-width:c.$tablet){
+                width: 50%;
+            }
+        }
+    }   
+}

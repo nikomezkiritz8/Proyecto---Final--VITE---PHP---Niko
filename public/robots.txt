@@ -1,0 +1,6 @@
+# Cambia https://www.ejemplo.com por el dominio real en produccion.
+User-agent: *
+Allow: /
+Disallow: /showroom
+
+Sitemap: https://www.ejemplo.com/sitemap.xml

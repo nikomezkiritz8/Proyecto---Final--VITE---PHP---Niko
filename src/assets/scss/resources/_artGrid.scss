@@ -1,0 +1,71 @@
+@use 'config' as c;
+
+.artGrid{
+
+    width: 100%;
+
+    display: grid;
+    gap: 1rem;
+    grid-auto-rows: auto;
+    grid-auto-columns: auto;
+    grid-template-areas:
+    'area01'
+    'area02'
+    'area03'
+    'area04'
+    'area05'
+    'area06'    
+    ;
+
+    @media only screen and (min-width:c.$tablet){
+
+        width: 80%;
+        grid-auto-rows: 50dvh;
+        grid-template-areas:
+        'area01 area01'
+        'area02 area03'
+        'area04 area04'
+        'area05 area06'
+        ;
+    }
+    @media only screen and (min-width:c.$desktop){
+
+        grid-auto-rows: 50dvh;
+        grid-template-areas:
+        'area01 area01 area02 area02'
+        'area03 area04 area04 area05'
+        'area03 area04 area04 area06'
+        ;
+    }
+
+    >div{
+
+        &:nth-of-type(1){
+            grid-area: area01;
+        }
+        &:nth-of-type(2){
+            grid-area: area02;
+        }
+        &:nth-of-type(3){
+            grid-area: area03;
+        }
+        &:nth-of-type(4){
+            grid-area: area04;
+        }
+        &:nth-of-type(5){
+            grid-area: area05;
+        }
+        &:nth-of-type(6){
+            grid-area: area06;
+        }
+
+
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;    
+        }
+    }
+
+}

@@ -1,0 +1,83 @@
+@use 'config' as c;
+
+.art11{
+    width: 80%;
+    display: grid;
+    gap: 1rem;
+    grid-auto-rows: auto;
+    grid-auto-columns: auto;
+    grid-template-areas: 
+    'area01'
+    'area02' 
+    'area03' 
+    'area04'
+    'area05'
+    'area06' 
+    'area07' 
+    'area08'
+    ;
+    @media only screen and (min-width:c.$tablet){
+        grid-auto-rows: 20%;
+        gap: .5rem;
+        grid-auto-columns: 40% auto;
+        grid-template-areas: 
+        'area01 area02'
+        'area03 area03'
+        'area04 area05'
+        'area06 area06'
+        'area07 area08'
+        ;
+    }
+    @media only screen and (min-width:c.$desktop){
+        grid-auto-rows: auto;
+        grid-auto-columns: 20% 30% 30% auto;
+        grid-template-areas: 
+        'area01 area02 area04 area05'
+        'area03 area03 area04 area06'
+        'area03 area03 area07 area08'
+        ;
+    }
+    >h3{
+        grid-column: 1 / -1;
+        margin: 0 0 1rem;
+    }
+    >div:nth-of-type(1){
+        grid-area: area01;
+    }
+    >div:nth-of-type(2){
+        grid-area: area02;
+    }
+    >div:nth-of-type(3){
+        grid-area: area03;
+    }
+    >div:nth-of-type(4){
+        grid-area: area04;
+    }
+    >div:nth-of-type(5){
+        grid-area: area05;
+    }
+    >div:nth-of-type(6){
+        grid-area: area06;
+    }
+    >div:nth-of-type(7){
+        grid-area: area07;
+    }
+    >div:nth-of-type(8){
+        grid-area: area08;
+    }
+    >div{
+        overflow: hidden;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            transition: 1s;
+            filter: grayscale(1);
+        }
+        &:hover img{
+            transform: scale(1.2);
+            filter: grayscale(0);
+        }
+    } 
+}

@@ -1,0 +1,188 @@
+// Este archivo servirá como archivo de configuración de aquellos estilos clave que afectan a toda la web
+
+// reseteo de estilso para el navegador
+// configuración de fuentes
+// encabezados h1, h2, etc
+// body, header, main, footer (sus estilos globales de forma)
+// section (estilos genéricos para todas las secciones)
+
+// aquí reseteo el css
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+//   border: 1px solid black;
+}
+
+// Configuración de fuentes
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../../fonts/Montserrat-Regular.ttf');
+}
+
+
+// Variables del proyecto
+$fuenteTitulos:'Montserrat';
+$fuenteTextos:'Montserrat';
+
+
+
+$color00: white;
+$color00svg: invert(100%) sepia(100%) saturate(0%) hue-rotate(159deg) brightness(104%) contrast(104%);
+$color00bis: #ebebeb;
+$color01: #1e1e1e;
+$color01bis:rgb(176, 176, 176);
+$color01bis2: rgba(0, 0, 0, 0.5);
+$color02: #234b66;
+$color02bis: #234b66;
+$color02svg: invert(24%) sepia(13%) saturate(2279%) hue-rotate(161deg) brightness(96%) contrast(88%);
+$color03: #d47523;
+$color03svg: invert(39%) sepia(100%) saturate(384%) hue-rotate(346deg) brightness(102%) contrast(91%);
+
+
+
+$tablet: 800px;
+$desktop: 1200px;
+
+$padMin: 1.5rem;
+$padMax: 3rem;
+
+html{
+    scroll-behavior: smooth;
+
+    &::-webkit-scrollbar{
+        display: none;
+    }
+    @media only screen and (min-width:$desktop){
+        &::-webkit-scrollbar{
+            display: initial;
+        }   
+    }
+}
+
+.error{
+    color: rgb(220, 2, 2);
+    font-style: italic;
+}
+
+
+// Aquí estilos de los encabezados h1, h2, h3, etc y de los textos
+h1, h2, h3{
+    font-family: $fuenteTitulos;
+}
+
+h1{
+    font-size: clamp(2rem, 6vw, 8rem);
+    text-align: center;     
+    color: $color02;
+    letter-spacing: 10px;
+    width: 90%;    
+}
+h2{
+    color: $color01bis;
+    font-size: 3rem;
+    letter-spacing: 4px;
+}
+h3{
+    color: $color02;
+    font-size: clamp(1rem, 2vw, 1.4rem);
+    letter-spacing: 2px;
+}
+h4{
+    font-family: $fuenteTextos;
+    color: $color01;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+p, span, label{
+    font-family: $fuenteTextos;
+    color: $color01;
+}
+a{
+    font-family: $fuenteTextos;      
+    text-decoration: none;
+}
+
+.h2Especial{
+    // los estilos de la caja donde dentro estarán tanto el span (ralla) como el h2
+    width: 100%;
+    padding: 0 $padMin;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 1rem;
+    @media only screen and (min-width:$desktop){
+        &{
+            width: 80%;
+            padding: initial;
+        }
+    }
+    >span{
+        width: 60px;
+        height: 2px;
+        background-color: $color02;
+    }
+    h2{
+        color: $color02;
+        font-family: $fuenteTextos;
+        font-size: 1.3rem;
+        text-align: left;
+    }
+    
+}
+
+.boton{
+    padding: 0.7rem 4rem;
+    color: $color00;  
+    background-color: $color02;
+    border-radius: 5px;
+    letter-spacing: 3px;
+    font-weight: 600;
+    border: 1px solid $color00;
+    transition: 0.3s;
+    &:hover{
+        background-color: $color00;
+        color:$color02;
+        border-color: $color02;
+    }
+    &:active{
+        transform: scale(0.95);
+    }
+}
+
+
+// Estilos básicos de etiquetas principales
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+header, nav, main, footer, section{
+    width: 100%;
+    max-width: 2560px;
+}
+
+section{
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2rem;
+    @media only screen and (min-width:$tablet){
+        &{
+            padding: 4rem 0;
+            row-gap: 3rem;
+        }
+    }
+    @media only screen and (min-width:$desktop){
+        &{
+            padding: 6rem 0;
+            row-gap: 4rem;
+        }
+    }
+}

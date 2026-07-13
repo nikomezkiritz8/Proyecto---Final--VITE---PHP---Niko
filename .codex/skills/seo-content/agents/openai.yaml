@@ -1,0 +1,7 @@
+interface:
+  display_name: "SEO Content"
+  short_description: "Copy SEO basado en directrices del proyecto"
+  default_prompt: "Use $seo-content para redactar o revisar contenido SEO del proyecto siguiendo la skill del repositorio."
+
+policy:
+  allow_implicit_invocation: true

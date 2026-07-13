@@ -1,0 +1,80 @@
+@use 'config' as c;
+
+// Si en el contenedor principal añadimos además la clase "invert" cponseguiremos revertir el orden de los items. Práctico para cuando usamos varias veces seguidas este recurso dentro de una sección.
+
+.art16{
+    // background-color: aquamarine;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    row-gap: 1.5rem;
+    // background-color: aquamarine;
+    @media only screen and (min-width:c.$tablet){
+        width: 80%;
+        flex-direction: row;
+        align-items: stretch; //aquí va temita
+        justify-content: center;
+    }
+    
+    >:nth-child(1){
+        // background-color: antiquewhite;
+        width: 100%;
+        padding: 0 1.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        row-gap: 1.5rem;
+        @media only screen and (min-width:c.$tablet){
+            width: 50%;
+            padding: 1.5rem 0;
+            padding-right: 1.5rem;
+            row-gap: 2rem;
+        }
+        >:nth-child(1){
+            text-align: center;
+            @media only screen and (min-width:c.$tablet){
+                align-self: start;
+            }
+        }
+        
+    }
+    >:nth-child(2){
+        width: 100%;
+        height: 50dvh;
+        // background-color: chartreuse;
+        overflow: hidden;
+        position: relative;
+        @media only screen and (min-width:c.$tablet){
+            width: 50%;
+            height: initial;
+        }
+        >img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            position: absolute;
+            // border-radius: 20px;
+
+        }
+    }
+    &.invert{   
+        >:nth-child(1){
+            @media only screen and (min-width:c.$tablet){
+                order: 1;
+                padding-left: 1.5rem;
+                padding-right: initial;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+

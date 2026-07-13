@@ -1,0 +1,143 @@
+@use 'config' as c;
+
+// estilos de esta sección 1
+
+.sect01{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: flex-start;
+    row-gap: 1.5rem;
+    @media only screen and (min-width:c.$tablet){
+        &{
+            row-gap: 2rem;
+        }
+    }
+    @media only screen and (min-width:c.$desktop){
+        &{
+            row-gap: 3rem;
+        }
+    }    
+    article{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        row-gap: 2rem;
+        @media only screen and (min-width:c.$tablet){
+            &{
+                flex-direction: row;
+                align-items: stretch;
+                justify-content: space-between;
+            }
+        }
+        @media only screen and (min-width:c.$desktop){
+            &{
+                width: 80%;
+            }
+        }
+        // div de textos
+        >:nth-child(1){
+            width: 100%;
+            padding: 0 c.$padMin;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            row-gap: 2rem;
+            @media only screen and (min-width:c.$tablet){
+                &{
+                    width: 46%;
+                    row-gap: 2.5rem;
+                }
+            }
+            @media only screen and (min-width:c.$desktop){
+                &{
+                    padding: initial;
+                }
+            }
+            h3{
+                color: c.$color01;
+                font-size: clamp(1.2rem, 5vw, 4rem);
+                font-weight: 400;
+                font-family: c.$fuenteTextos;
+            }
+            p{
+                color: c.$color01bis;
+            }
+            >span{
+                width: 90%;
+                height: 1.5px;
+                background-color: c.$color01bis;
+            }
+            .cards{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: flex-start;
+                gap: 1rem;
+                @media only screen and (min-width:c.$tablet){
+                    &{
+                       flex-direction: row;
+                       justify-content: space-between;
+                    }
+                }
+                .card{                    
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: flex-start;
+                    row-gap: 1.5rem;
+                    @media only screen and (min-width:c.$tablet){
+                        &{
+                            width: 45%;
+                        }
+                    }
+                    >img{
+                        // border-radius: 50%;
+                        width: 40px;
+                        height: 40px;
+                        object-fit: contain;
+                    }
+                    h4{
+
+                    }
+                    p{
+                        font-size: 0.9em;
+                    }
+                    
+                }
+            }
+        }
+        // div de la imagen
+        >:nth-child(2){
+            overflow: hidden;
+            border-radius: 80px;
+            width: 100%;
+            height: 40dvh;
+            position: relative;
+            @media only screen and (min-width:c.$tablet){
+                &{
+                    width: 46%;
+                    height: initial;
+                }
+            }
+            >img{
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+                transition: 1s;
+                
+                &:hover{
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+}

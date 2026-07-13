@@ -1,0 +1,61 @@
+@use 'config' as c;
+
+.modulePersonal01{
+    background-color: c.$color01bis;
+    width: 100dvw;
+    max-width: 2560px;
+    padding: 2rem 1.5rem;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+
+    @media only screen and (min-width:c.$tablet){
+        padding: 3rem 1.5rem;
+    }
+    @media only screen and (min-width:c.$desktop){
+        padding: 4rem 1.5rem;
+    }
+    >div{
+        // background-color: antiquewhite;
+        width: 260px;
+        padding: 2rem 1rem;
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        row-gap: 3rem;
+        transition: 1s;
+
+        @media only screen and (min-width:c.$tablet){
+            row-gap: 4rem;
+        }
+
+        // Encabezado (el que sea)
+        >:nth-child(1){
+            font-weight: 300;
+            font-size: clamp(1rem, 5vw, 1.5rem);
+            text-align: center;
+            order: 1;
+        }
+        img{
+            width: 30%;
+            filter: c.$color03svg;
+            order: 0;
+            transition: .5s;
+        }
+
+        &:hover{
+            transform: scale(1.2);
+            img{
+                filter: c.$color03svg;
+            }
+        }
+        
+
+    }
+}

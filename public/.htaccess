@@ -1,0 +1,10 @@
+# Apache en produccion.
+# Todas las URLs que no sean ficheros o carpetas reales entran por index.php.
+
+Options -Indexes
+DirectoryIndex index.php
+
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ index.php [L]

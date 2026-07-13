@@ -1,0 +1,197 @@
+@use 'config' as c;
+
+$anchoContenido: 1180px;
+
+// Footer mobile-first. Los estilos de enlaces01 solo adaptan al footer el
+// mismo listado que utiliza el nav; el estilo base sigue en _nav01.scss.
+.footer01{
+    width: 100%;
+    color: c.$color00;
+    background-color: c.$color01;
+
+    &__inner{
+        width: min(100% - 2rem, $anchoContenido);
+        margin-inline: auto;
+        padding: 3rem 0 2rem;
+
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+
+        @media only screen and (min-width:c.$tablet){
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+        }
+    }
+
+    &__column{
+        // Neutraliza los estilos generales de section dentro del footer.
+        width: 100%;
+        padding: 0;
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 1rem;
+    }
+
+    &__title{
+        margin: 0;
+        color: c.$color00;
+        font-family: c.$fuenteTitulos;
+        font-size: 1.25rem;
+        line-height: 1.1;
+    }
+
+    &__list{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        row-gap: 0.45rem;
+        margin: 0;
+        padding: 0;
+    }
+
+    &__link,
+    &__text{
+        display: inline-flex;
+        align-items: center;
+        gap: 0.6rem;
+        margin: 0;
+        color: c.$color00;
+        font-family: c.$fuenteTextos;
+        font-size: 0.95rem;
+        line-height: 1.35;
+        text-decoration: none;
+
+        >span{
+            color: inherit;
+        }
+    }
+
+    &__link{
+        transition: transform 200ms ease;
+
+        &:hover,
+        &:focus-visible{
+            color: c.$color00;
+            transform: translateX(0.15rem);
+        }
+
+        &:focus-visible{
+            outline: 2px solid c.$color03;
+            outline-offset: 0.2rem;
+        }
+    }
+
+    &__icon{
+        width: 1rem;
+        height: 1rem;
+        flex: 0 0 auto;
+    }
+
+    .enlaces01{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        row-gap: 0.45rem;
+        margin: 0;
+        padding: 0;
+
+        &__item{
+            margin: 0;
+        }
+
+        &__link{
+            min-height: initial;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.6rem;
+            padding: 0;
+            border-radius: 0;
+            color: c.$color00;
+            background-color: transparent;
+            font-family: c.$fuenteTextos;
+            font-size: 0.95rem;
+            font-weight: 400;
+            line-height: 1.35;
+            text-decoration: none;
+            transition: transform 200ms ease;
+
+            >span{
+                color: inherit;
+            }
+
+            &:hover,
+            &:focus-visible{
+                color: c.$color00;
+                background-color: transparent;
+                transform: translateX(0.15rem);
+            }
+
+            &:focus-visible{
+                outline: 2px solid c.$color03;
+                outline-offset: 0.2rem;
+            }
+
+            &.is-active{
+                color: c.$color00;
+                background-color: transparent;
+            }
+
+            &--child{
+                min-height: initial;
+                font-size: 0.95rem;
+            }
+        }
+
+        &__icon{
+            width: 1rem;
+            height: 1rem;
+            flex: 0 0 auto;
+        }
+
+        &__submenuHeader{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        &__submenuToggle{
+            display: none;
+        }
+
+        &__submenu{
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            row-gap: 0.45rem;
+            margin: 0.35rem 0 0;
+            padding: 0 0 0 1.25rem;
+        }
+    }
+
+    &__address{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 0.6rem;
+        margin: 0;
+        font-style: normal;
+    }
+
+    &__bottom{
+        width: min(100% - 2rem, $anchoContenido);
+        margin-inline: auto;
+        padding: 1.25rem 0 1.5rem;
+        border-top: 1px solid rgba(c.$color00, 0.14);
+        text-align: center;
+
+        p{
+            margin: 0;
+            color: rgba(c.$color00, 0.82);
+            font-family: c.$fuenteTextos;
+            font-size: 0.9rem;
+            line-height: 1.35;
+        }
+    }
+}

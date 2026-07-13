@@ -1,0 +1,7 @@
+interface:
+  display_name: "GitHub Action Deploy"
+  short_description: "Guía CI/CD Vite por SSH con secrets, variables y rsync"
+  default_prompt: "Use $vite-ssh-github-action-deploy para guiar paso a paso la creación de un deploy Vite/PHP/Node con GitHub Actions por SSH/rsync, incluyendo inspección del hosting, claves SSH, secrets, variables y verificación."
+
+policy:
+  allow_implicit_invocation: true

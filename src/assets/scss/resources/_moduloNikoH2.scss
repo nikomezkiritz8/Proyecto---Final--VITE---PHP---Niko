@@ -1,0 +1,21 @@
+@use 'config' as c;
+
+.moduloNikoH2{
+    animation: espiralMortal 30s ease-in-out infinite;
+    background: linear-gradient(-90deg, c.$color01, c.$color02, c.$color03, c.$color01);
+    background-clip: text;
+    background-size: 300%;
+    -webkit-text-fill-color: transparent;
+}
+
+@keyframes espiralMortal {
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }    
+    100%{
+        background-position: 0% 50%;
+    }
+}

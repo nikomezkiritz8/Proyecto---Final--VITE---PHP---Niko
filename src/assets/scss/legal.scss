@@ -1,0 +1,120 @@
+@use "./resources/config" as c;
+@use "./resources/global";
+
+.legalPage {
+  width: min(100% - 2rem, 980px);
+  margin-inline: auto;
+  padding: 3rem 0 4rem;
+}
+
+.legalPage__hero {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  margin-bottom: 2rem;
+}
+
+.legalPage__eyebrow {
+  margin: 0;
+  color: c.$color03;
+  font-family: c.$fuenteTextos;
+  font-size: 0.85rem;
+  font-weight: 900;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.legalPage h1 {
+  margin: 0;
+  color: c.$color01;
+  font-size: clamp(2rem, 6vw, 4rem);
+  line-height: 0.95;
+}
+
+.legalPage__intro {
+  max-width: 64ch;
+  margin: 0;
+  color: c.$color01;
+  font-family: c.$fuenteTextos;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.legalPage__index {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 2.5rem;
+}
+
+.legalPage__index a {
+  display: inline-flex;
+  padding: 0.65rem 0.85rem;
+  border-radius: 8px;
+  color: c.$color03;
+  background-color: c.$color01bis;
+  font-family: c.$fuenteTextos;
+  font-size: 0.95rem;
+  font-weight: 800;
+  line-height: 1;
+  text-decoration: none;
+  transition: color 200ms ease, background-color 200ms ease;
+}
+
+.legalPage__index a:hover,
+.legalPage__index a:focus-visible {
+  color: c.$color00;
+  background-color: c.$color03;
+}
+
+.legalPage__section {
+  display: block;
+  margin: 0 0 2rem;
+  padding: 1.5rem 0 0;
+  scroll-margin-top: 6rem;
+}
+
+.legalPage__section + .legalPage__section {
+  border-top: 1px solid c.$color01bis;
+}
+
+.legalPage__section h2 {
+  margin: 0 0 1rem;
+  color: c.$color01;
+  font-size: clamp(1.5rem, 4vw, 2.25rem);
+  line-height: 1;
+}
+
+.legalPage__section h3 {
+  margin: 1.4rem 0 0.65rem;
+  color: c.$color01;
+  font-size: 1.15rem;
+  line-height: 1.15;
+}
+
+.legalPage__section p,
+.legalPage__section li {
+  color: c.$color01;
+  font-family: c.$fuenteTextos;
+  font-size: 1rem;
+  line-height: 1.65;
+}
+
+.legalPage__section p {
+  margin: 0 0 1rem;
+}
+
+.legalPage__section ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin: 0 0 1rem 1.1rem;
+  padding: 0;
+}
+
+.legalPage__notice {
+  padding: 1rem;
+  border-left: 4px solid c.$color03;
+  border-radius: 8px;
+  background-color: c.$color01bis;
+}

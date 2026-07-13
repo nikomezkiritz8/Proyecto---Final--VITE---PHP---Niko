@@ -1,0 +1,17 @@
+@use 'config' as c;
+
+.art05{
+    width: 100%;
+    padding: 0 c.$padMin;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    row-gap: 3rem;
+    @media only screen and (min-width:c.$tablet){
+        width: 40%;
+        min-width: 600px;
+        row-gap: 4rem;
+        padding: initial;
+    }
+}

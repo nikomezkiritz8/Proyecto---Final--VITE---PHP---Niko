@@ -1,0 +1,62 @@
+@use 'config' as c;
+
+.art04{
+    width: 100%;
+    padding: 0 c.$padMin;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    row-gap: 2rem;
+    @media only screen and (min-width:c.$desktop){
+        width: 80%;
+        padding: initial;
+        row-gap: 4rem;
+    }
+    .ralla{ 
+        width: 60px;
+        height: 2px;
+        background-color: c.$color02;
+    }
+    .contenedor-fichas{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        row-gap: 3rem;
+        @media only screen and (min-width:c.$tablet){
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: space-between;
+        }
+        .ficha{
+            width: 100%;
+            max-width: 400px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            row-gap: 1rem;
+            @media only screen and (min-width:c.$tablet){
+                width: 23%;
+                max-width: initial;
+            }
+            h4{
+                order: 3;             
+            }
+            img{
+                width: 90px;
+                height: 90px;
+                object-fit: cover;
+                object-position: center;
+                border-radius: 50%;
+            }
+            p{
+                text-align: center;
+                font-weight: 100;
+                min-height: 125px;
+            }
+        }
+    }
+}
