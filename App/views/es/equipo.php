@@ -110,11 +110,11 @@
               </div>
 
               <div>
-                  <img src="<?= asset('assets/img/views/futuro.avif') ?>" alt="Escena del futuro">
+                  <img src="<?= asset('assets/img/views/futuro.avif') ?>" alt="Escena del futuro" title="Escena del futuro">
               </div>
 
               <div>
-                  <img src="<?= asset('assets/img/views/relax.avif') ?>" alt="Escena con pc multipantalla">
+                  <img src="<?= asset('assets/img/views/relax.avif') ?>" alt="Escena con pc multipantalla" title="Escena de pc con multipantalla">
               </div>
 
           </article>
