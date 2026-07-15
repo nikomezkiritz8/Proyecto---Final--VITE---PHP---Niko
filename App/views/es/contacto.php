@@ -2,7 +2,7 @@
 <html lang="<?= e($lang ?? env('LANG_DEFAULT', 'es')) ?>">
 <head>
     <meta charset="UTF-8">
-    <link rel="icon" type="image/svg+xml" href="<?= asset('favicon.svg') ?>">
+    <link rel="icon" type="image/svg+xml" href="<?= asset('assets/img/icons/favicon.svg') ?>">
     <link rel="canonical" href="<?= url('/contacto') ?>">
     <title>Contacta conmigo</title>
     <meta name="description" content="Contacta conmigo para oportunidades laborales, proyectos web y colaboraciones como desarrollador web junior en Donostia o en remoto.">
@@ -187,9 +187,8 @@
                 <div class="cabecera">
                     <div>
                         <!-- Opiniones de los clientes -->
-                    <h2>¿QUE DICEN NUESTROS CLIENTES?</h2>
-                    <p>Matrix ipsum dolor sit amet, consectetur adipisicing elit. Neo eligendi veritatis codicem et simulacrum.</p>
-                    <p>Morpheus quaerat optionem, pillula rubra aperiam systema et realitatem. Trinity navigat dum Agent Smith codicem custodit.</p>
+                    <h2>¿QUE DICEN QUIENES HAN TRABAJADO CONMIGO?</h2>
+                    <p>Me enorgullece construir relaciones basadas en la confianza y el resultado.</p>
                     </div>
                     <img src="<?= asset('assets/img/test/dummy02.avif') ?>" alt="Escena de Matrix">
                 </div>
@@ -202,34 +201,34 @@
             <!-- Opiniones clientes -->
             <!-- artículo 4 -->
             <article class="art04">
-                <h2>OPINIONES</h2>
+                <h2>TESTIMONIOS</h2>
                 <span class="ralla"></span>
                 <div class="contenedor-fichas">
                     <div class="ficha">
                         <h3>Leire</h3>
                         <img src="<?= asset('assets/img/test/dummy01.avif') ?>" alt="Escena de Matrix" title="">                        
-                        <p>Matrix ipsum dolor sit amet, consectetur adipisicing elit. Neo eligendi veritatis codicem et simulacrum.</p>
+                        <p>"Niko aportó una perspectiva fresca a nuestro proyecto. Su capacidad para detectar detalles que nosotros pasamos por alto mejoró mucho la experiencia final."</p>
                         <span class="ralla"></span>
                     </div>
 
                     <div class="ficha">
                         <h3>Ibon</h3>
                         <img src="<?= asset('assets/img/test/dummy02.avif') ?>" alt="Escena de Matrix" title="">                        
-                        <p>Matrix ipsum dolor sit amet, consectetur adipisicing elit. Morpheus quaerat optionem et realitatem.</p>
+                        <p>"Rápido, metódico y con mucha iniciativa. Entregó el proyecto antes de lo previsto y el código estaba impecablemente organizado."</p>
                         <span class="ralla"></span>
                     </div>
 
                     <div class="ficha">
                         <h3>Igor</h3>
                         <img src="<?= asset('assets/img/test/dummy03.avif') ?>" alt="Escena de Matrix" title="">                        
-                        <p>Matrix ipsum dolor sit amet, consectetur adipisicing elit. Agent Smith erroribus reiciendis et systema.</p>
+                        <p>"Trabajar con él fue sencillo desde el primer día. Se adaptó a nuestro flujo, preguntó lo necesario y resolvió problemas complejos con calma."</p>
                         <span class="ralla"></span>
                     </div>
 
                     <div class="ficha">
                         <h3>Laura</h3>
                         <img src="<?= asset('assets/img/test/dummy04.avif') ?>" alt="Escena de Matrix" title="">                        
-                        <p>Matrix ipsum dolor sit amet, consectetur adipisicing elit. Zion libertatem defendit contra machinas.</p>
+                        <p>"Su enfoque en la accesibilidad y el rendimiento nos hizo replantearnos cómo enfrentábamos el frontend. Un gran aporte para el equipo."</p>
                         <span class="ralla"></span>
                     </div>
                 </div>

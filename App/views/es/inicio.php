@@ -2,7 +2,7 @@
 <html lang="<?= e($lang ?? env('LANG_DEFAULT', 'es')) ?>">
   <head>
     <meta charset="UTF-8">
-    <link rel="icon" type="image/svg+xml" href="<?= asset('portfolio.svg') ?>">
+    <link rel="icon" type="image/svg+xml" href="<?= asset('assets/img/icons/favicon.svg') ?>">
     <link rel="canonical" href="<?= url('/') ?>">
     <title>Mi portfolio</title>
     <meta name="description" content="Portfolio echo por mi.">
@@ -575,9 +575,10 @@
                 >
                 <div>
                     <h3>Portfolio personal</h3>
-                    <p>Matrix ipsum dolor sit amet, consectetur adipisicing elit. Neo eligendi veritatis codicem et simulacrum. Morpheus quaerat optionem, pillula rubra aperiam systema et realitatem.</p>
-                    <p>Matrix ipsum dolor sit amet, consectetur adipisicing elit. Agent Smith erroribus reiciendis et Zion libertatem defendit.</p>
-                    <a href="#" class="boton">CTA</a>
+                    <p>Mi carta de presentación digital. Diseñada para demostrar que la accesibilidad, el rendimiento impecable y el diseño interactivo pueden convivir en armonía.</p>
+                    <p>Tech: HTML, SCSS, PHP, Vite</p>
+                    <a href="/es/mis-proyectos" class="boton">Ver proyecto</a> 
+                    
                 </div>
             </article>
 
@@ -598,9 +599,9 @@
                 >
                 <div>
                     <h3>Landing page de arquitectura</h3>
-                    <p>Matrix ipsum dolor sit amet, consectetur adipisicing elit. Morpheus quaerat optionem, pillula rubra aperiam systema et realitatem.</p>
-                    <p>Matrix ipsum dolor sit amet, consectetur adipisicing elit. Neo eligendi veritatis codicem et simulacrum.</p>
-                    <a href="#" class="boton">CTA</a>
+                    <p>Concepto visual y funcional para un estudio de arquitectura contemporáneo de Donostia. Inspirado en líneas rectas, orden estructural y elegancia monocromática.</p>
+                    <p>Tech: HTML, CSS</p>
+                    <a href="/es/mis-proyectos" class="boton">Ver Proyecto</a>
                 </div>
             </article>
 
@@ -621,9 +622,9 @@
                 >
                 <div>
                     <h3>Ecommerce de una tienda japónesa</h3>
-                    <p>Matrix ipsum dolor sit amet, consectetur adipisicing elit. Zion libertatem defendit dum machinae mundum regunt.</p>
-                    <p>Matrix ipsum dolor sit amet, consectetur adipisicing elit. Agent Smith erroribus reiciendis et systema simulacrum celat.</p>
-                    <a href="#" class="boton">CTA</a>
+                    <p>Demostración de una boutique online dedicada a la importación de té e inciensos de KOKORO. Combina sobriedad minimalista y dinamismo comercial.</p>
+                    <p>Tech: WordPress</p>
+                    <a href="/es/mis-proyectos" class="boton">Ver proyecto</a>
                 </div>
             </article>
 
@@ -640,13 +641,14 @@
                     (max-width:800px) 900px,
                     1500px
                     "
+
                     src="<?= asset('assets/img/views/tuempresa.avif') ?>"          
                 >
                 <div>
                     <h3>¿La web de tu empresa?</h3>
-                    <p>Matrix ipsum dolor sit amet, consectetur adipisicing elit. Morpheus quaerat optionem, pillula rubra aperiam systema et realitatem.</p>
-                    <p>Matrix ipsum dolor sit amet, consectetur adipisicing elit. Neo eligendi veritatis codicem et simulacrum.</p>
-                    <a href="#" class="boton">CTA</a>
+                    <p>¿Tienes un proyecto en mente? Me encanta adaptarme a nuevas necesidades. Desde landing pages hasta sitios corporativos, puedo ayudarte a construir tu presencia digital.</p>
+                    <p>Tech: A medida</p>
+                    <a href="/es/contacto" class="boton">Contactar</a>
                 </div>
             </article>
 

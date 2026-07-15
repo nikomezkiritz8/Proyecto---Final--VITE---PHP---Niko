@@ -2,7 +2,7 @@
 <html lang="<?= e($lang ?? env('LANG_DEFAULT', 'es')) ?>">
   <head>
     <meta charset="UTF-8">
-    <link rel="icon" type="image/svg+xml" href="<?= asset('favicon.svg') ?>">
+    <link rel="icon" type="image/svg+xml" href="<?= asset('assets/img/icons/favicon.svg') ?>">
     <link rel="canonical" href="<?= url('/mis-proyectos') ?>">
     <title>Mis proyectos</title>
     <meta name="description" content="Conoce al equipo de panaderos y pasteleros que trabaja cada dia en nuestro obrador.">
@@ -118,24 +118,30 @@
               </div>
 
           </article>
-        Portfolio Personal
+
           <article class="artSlider01" aria-label="Carrusel de mis proyectos">
             
             <div class="artSlider01__visor">
                 <div class="artSlider01__pista">
                   <div class="artSlider01__slide">
-                    <h3>Matrix ipsum 01</h3>
-                    <img src="<?= asset('assets/img/test/dummy01.avif') ?>" alt="Escena de Matrix">
+                    <h3>Escuchar antes de diseñar.</h3>
+                    <img src="<?= asset('assets/img/views/escuchar.avif') ?>" alt="Escena de escucha a los otros" title="Escena de escuchar">
                   </div>
                   <div class="artSlider01__slide">
-                    <h3>Matrix ipsum 02</h3>
-                    <img src="<?= asset('assetPortfolio Personals/img/test/dummy03.avif') ?>" alt="Escena de Matrix">
+                    <h3>Cada interfaz empieza con una idea.</h3>
+                    <img src="<?= asset('assets/img/views/idea.avif') ?>" alt="Escena de idea en Figma" title="Figma">
                   </div>
 
                   <div class="artSlider01__slide">
-                    <h3>Matrix ipsum 03</h3>
-                    <img src="<?= asset('assets/img/test/dummy04.avif') ?>" alt="Escena de Matrix">
+                    <h3>Código limpio. Experiencias rápidas.</h3>
+                    <img src="<?= asset('assets/img/views/code.avif') ?>" alt="Escena de código" title="Code">
                   </div>
+
+                  <div class="artSlider01__slide">
+                    <h3>Los pequeños detalles marcan la diferencia.</h3>
+                    <img src="<?= asset('assets/img/views/lighthouse.avif') ?>" alt="Escena de Lighthouse" title="Lighthouse">
+                  </div>
+
                 </div>
             </div>
 
@@ -144,6 +150,7 @@
 
           <div class="artSlider01__track">
               <div class="artSlider01__track__dot active"></div>
+              <div class="artSlider01__track__dot"></div>
               <div class="artSlider01__track__dot"></div>
               <div class="artSlider01__track__dot"></div>
           </div>

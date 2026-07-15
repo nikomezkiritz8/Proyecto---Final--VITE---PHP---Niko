@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 64 64">
+
+    <defs>
+        <linearGradient id="grad"
+                        x1="0%"
+                        y1="0%"
+                        x2="100%"
+                        y2="100%">
+            <stop offset="0%" stop-color="#7C6CF6"/>
+            <stop offset="100%" stop-color="#F5A623"/>
+        </linearGradient>
+    </defs>
+
+    <!-- Hexágono -->
+    <path
+        fill="url(#grad)"
+        d="
+        M32 4
+        L54 17
+        L54 47
+        L32 60
+        L10 47
+        L10 17
+        Z"/>
+
+    <!-- > -->
+    <polyline
+        points="23,24 31,32 23,40"
+        fill="none"
+        stroke="#ffffff"
+        stroke-width="4"
+        stroke-linecap="round"
+        stroke-linejoin="round"/>
+
+    <!-- _ -->
+    <line
+        x1="35"
+        y1="40"
+        x2="43"
+        y2="40"
+        stroke="#ffffff"
+        stroke-width="4"
+        stroke-linecap="round"/>
+
+</svg>
