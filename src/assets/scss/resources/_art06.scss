@@ -1,60 +1,127 @@
 @use 'config' as c;
 
-.art06{ 
+.art06{
+
+    position: relative;
+    overflow: hidden;
+
     width: 100%;
+
     background-color: c.$color01;
+
+    // Imagen de fondo
+    background-image:
+        linear-gradient(
+            rgba(15,23,42,.92),
+            rgba(15,23,42,.92)
+        ),
+        url("/assets/img/views/trabajando.avif");
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
     padding: 3rem c.$padMin;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    row-gap: 5rem;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:flex-start;
+
+    row-gap:5rem;
+
     @media only screen and (min-width:c.$tablet){
-        padding: 5rem c.$padMin;
+
+        padding:5rem c.$padMin;
+
     }
+
     @media only screen and (min-width:c.$desktop){
-        padding: 8rem c.$padMin;
-        row-gap: 7rem;
+
+        padding:8rem c.$padMin;
+
+        row-gap:7rem;
+
     }
+
     >div{
-        position: relative;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        row-gap: 3rem;
+
+        position:relative;
+
+        z-index:2;
+
+        width:100%;
+
+        display:flex;
+        flex-direction:column;
+        align-items:flex-end;
+
+        row-gap:3rem;
+
         @media only screen and (min-width:c.$tablet){
-            width: 80%;
-            padding-top: 10rem;
+
+            width:80%;
+            padding-top:10rem;
+
         }
+
         @media only screen and (min-width:c.$desktop){
-            width: 50%;
-            row-gap: 4rem;
+
+            width:50%;
+            row-gap:4rem;
+
         }
-        >:nth-child(1), p{
-            color: c.$color00;
-            width: 100%;
-            @media only screen and (min-width:c.$tablet){
-                width: 80%;
-            }
-            @media only screen and (min-width:c.$desktop){
-                width: 60%;
-            }
-        }
-        >:nth-child(1){            
-            @media only screen and (min-width:c.$tablet){
-                font-size: clamp(1.2rem, 3.2vw, 3rem);
-                line-height: clamp(1.5rem, 4vw, 4rem);;
-                position: absolute;
-                top: 0;
-                left: 0;
-            }           
-        }
+
+        >:nth-child(1),
         p{
-            line-height: 2rem;
+
+            color:c.$color00;
+
+            width:100%;
+
+            @media only screen and (min-width:c.$tablet){
+
+                width:80%;
+
+            }
+
+            @media only screen and (min-width:c.$desktop){
+
+                width:60%;
+
+            }
+
         }
+
+        >:nth-child(1){
+
+            @media only screen and (min-width:c.$tablet){
+
+                position:absolute;
+
+                top:0;
+                left:0;
+
+                font-size:clamp(1.2rem,3.2vw,3rem);
+
+                line-height:clamp(1.5rem,4vw,4rem);
+
+            }
+
+        }
+
+        p{
+
+            line-height:2rem;
+
+        }
+
         .boton{
-            width: max-content;
+
+            width:max-content;
+
         }
+
     }
+
 }

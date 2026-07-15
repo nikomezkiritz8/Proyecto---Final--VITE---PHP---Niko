@@ -17,19 +17,19 @@
 
 // Configuración de fuentes
 @font-face {
-    font-family: 'Made';
-    src: url('../../fonts/MADE Evolve Sans EVO.ttf');
+    font-family: 'Space';
+    src: url('../../fonts/SpaceGrotesk-VariableFont_wght.ttf');
 }
 
 @font-face {
-    font-family: 'Louis';
-    src: url('../../fonts/Louis George Cafe.ttf');
+    font-family: 'Manrope';
+    src: url('../../fonts/Manrope-VariableFont_wght.ttf');
 }
 
 
 // Variables del proyecto
-$fuenteTitulos:'Made';
-$fuenteTextos:'Louis';
+$fuenteTitulos:'Space';
+$fuenteTextos:'Manrope';
 
 
 $color00: #FAFBFF;
@@ -43,6 +43,7 @@ $color02bis: #4F46E5;
 $color02svg: invert(24%) sepia(13%) saturate(2279%) hue-rotate(161deg) brightness(96%) contrast(88%);
 $color03: #F59E0B;
 $color03svg: invert(39%) sepia(100%) saturate(384%) hue-rotate(346deg) brightness(102%) contrast(91%);
+$color04: #374151;
 
 
 

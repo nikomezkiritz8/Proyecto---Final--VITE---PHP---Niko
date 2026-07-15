@@ -24,7 +24,7 @@ $tamanoControl: 2.75rem;
                     border-color: c.$color03;
                     background-color: c.$color01bis;
                 }
-
+Manrope-VariableFont_wght
                 .enlaces01__chevron{
                     transform: rotate(180deg);
                 }
@@ -129,7 +129,8 @@ $tamanoControl: 2.75rem;
     top: 0;
     z-index: 1000;
     background-color: rgba(c.$color00, 0.98);
-    border-bottom: 1px solid c.$color01bis;
+    backdrop-filter: blur(18px);
+    border-bottom:1px solid rgba(255,255,255,.08);
     box-shadow: 0 0.4rem 1.5rem rgba(0, 0, 0, 0.08);
 
     &.is-open{

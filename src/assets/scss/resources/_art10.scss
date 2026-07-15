@@ -27,23 +27,48 @@
             gap: 2rem;
         }
         .ficha{
-            // background-color: aqua;
-            width: 47%;
-            display: flex;
-            flex-direction: column;
-            row-gap: 1rem;
-            @media only screen and (min-width:c.$tablet){
-                width: 31%;
+
+            background:#fff;
+            border-radius:18px;
+            padding:30px;
+            text-align:center;
+
+            transition:.35s;
+
+            border:1px solid #ECECEC;
+
+            box-shadow: 0 8px 25px rgba(0,0,0,.05);
+
+            &:hover{
+
+                transform:translateY(-8px);
+
+                box-shadow: 0 20px 45px rgba(0,0,0,.12);
+                cursor: pointer;
             }
+
+
             .sub-header{
                 color: c.$color03;
             }
             img{
-               width: 30px;
-               @media only screen and (min-width:c.$tablet){
-                    width: 50px;
-                }
+
+                width:70px;
+                height:70px;
+
+                margin:auto;
+                
+
+
+                display:flex;
+                align-items:center;
+                justify-content:center;
+
+                color:#6C63FF;
+
+                font-size:28px;
             }
+
             p{
                 font-size: clamp(0.7rem, 3vw, 1rem);
                 color: c.$color01;

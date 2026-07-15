@@ -16,7 +16,7 @@
     position: absolute;
     inset: 0;
     z-index: -1;
-    background-color: rgba(c.$color01, 0.68);
+    background: rgba(0,0,0,.55);
   }
 
   &__media {
@@ -60,7 +60,7 @@
     }
 
     @media only screen and (min-width: c.$desktop) {
-      font-size: 6rem;
+      font-size: 4rem;
     }
   }
 
