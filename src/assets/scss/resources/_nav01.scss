@@ -24,7 +24,7 @@ $tamanoControl: 2.75rem;
                     border-color: c.$color03;
                     background-color: c.$color01bis;
                 }
-Manrope-VariableFont_wght
+
                 .enlaces01__chevron{
                     transform: rotate(180deg);
                 }
@@ -123,9 +123,6 @@ Manrope-VariableFont_wght
 // amplía solamente el elemento que cambia en escritorio.
 .nav01{
     position: sticky;
-    background-image: url(/public/portfolio.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
     top: 0;
     z-index: 1000;
     background-color: rgba(c.$color00, 0.98);
@@ -174,19 +171,6 @@ Manrope-VariableFont_wght
         text-decoration: none;
     }
 
-    &__logo{
-        width: $tamanoControl;
-        height: $tamanoControl;
-        display: grid;
-        place-items: center;
-        border-radius: $bordeRadio;
-        color: c.$color00;
-        background: linear-gradient(135deg, c.$color02, c.$color03);
-        font-family: c.$fuenteTitulos;
-        font-size: 1rem;
-        font-weight: 900;
-        line-height: 1;
-    }
 
     &__brandText{
         color: c.$color01;

@@ -5,7 +5,59 @@
 <nav class="nav01" data-nav01>
   <div class="nav01__inner">
     <a class="nav01__brand" href="/es" aria-label="Ir al inicio">
-      <span class="nav01__logo" aria-hidden="true"></span>
+      <span class="nav01__logo" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 64 64"
+          width="64"
+          height="64"
+          fill="none">
+
+          <!-- Hexágono -->
+          <path
+              d="M32 4
+                L52 16
+                L52 48
+                L32 60
+                L12 48
+                L12 16
+                Z"
+              fill="url(#grad)"
+          />
+
+          <!-- Cursor > -->
+          <path
+              d="M24 25 L31 32 L24 39"
+              stroke="white"
+              stroke-width="3"
+              stroke-linecap="round"
+              stroke-linejoin="round"/>
+
+          <!-- Guion bajo -->
+          <line
+              x1="34"
+              y1="39"
+              x2="42"
+              y2="39"
+              stroke="white"
+              stroke-width="3"
+              stroke-linecap="round"/>
+
+          <!-- Gradiente -->
+          <defs>
+              <linearGradient id="grad"
+                              x1="12"
+                              y1="4"
+                              x2="52"
+                              y2="60"
+                              gradientUnits="userSpaceOnUse">
+                  <stop offset="0%" stop-color="#6366F1"/>
+                  <stop offset="100%" stop-color="#F59E0B"/>
+              </linearGradient>
+          </defs>
+
+      </svg>
+
+</span>
       <p>DEV STUDIO</p>
       <span class="nav01__brandText"></span>
     </a>
