@@ -15,3 +15,145 @@
         width: 60%;
     }
 }
+
+.focus-player{
+
+    position:fixed;
+
+    right:25px;
+    bottom:25px;
+
+    z-index:9999;
+
+}
+
+#focusButton{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:1rem;
+
+    padding:1rem 1.3rem;
+
+    border:none;
+
+    border-radius:18px;
+
+    background:rgba(255,255,255,.12);
+
+    backdrop-filter:blur(12px);
+
+    -webkit-backdrop-filter:blur(12px);
+
+    border:1px solid rgba(255,255,255,.18);
+
+    box-shadow:0 12px 35px rgba(0,0,0,.18);
+
+    cursor:pointer;
+
+    transition:.35s;
+
+}
+
+#focusButton:hover{
+
+    transform:translateY(-4px);
+
+    background:rgba(255,255,255,.18);
+
+}
+
+.focus-icon{
+
+    width:46px;
+    height:46px;
+
+    border-radius:50%;
+
+    background:c.$color02;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+}
+
+.focus-icon img{
+
+    width:22px;
+
+    filter:c.$color00svg;
+
+}
+
+.focus-info{
+
+    display:flex;
+    flex-direction:column;
+
+    align-items:flex-start;
+
+}
+
+.focus-info span{
+
+    color:white;
+
+    font-weight:700;
+
+}
+
+.focus-info small{
+
+    color:rgba(255,255,255,.75);
+
+}
+
+.focus-status{
+
+    width:10px;
+    height:10px;
+
+    border-radius:50%;
+
+    background:transparent;
+
+    transition:.3s;
+
+}
+
+.focus-player.playing{
+
+    .focus-status{
+
+        background:#22c55e;
+
+        box-shadow:0 0 12px #22c55e;
+
+    }
+
+    .focus-icon{
+
+        animation:rotateDisc 6s linear infinite;
+
+    }
+
+}
+
+@keyframes rotateDisc{
+
+    from{
+
+        transform:rotate(0);
+
+    }
+
+    to{
+
+        transform:rotate(360deg);
+
+    }
+
+}

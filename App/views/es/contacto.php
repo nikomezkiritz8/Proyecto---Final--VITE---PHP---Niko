@@ -237,13 +237,36 @@
         </section>
     </main>
 
-    
-        
-
-
-    
 
     <?php require app_path('includes/es/footer.php'); ?>
+
+    <div class="focus-player" id="focusPlayer">
+
+    <button id="focusButton">
+
+        <div class="focus-icon">
+
+            <img src="<?= asset('assets/img/icons/headphones.svg') ?>" alt="Focus Mode">
+
+        </div>
+
+        <div class="focus-info">
+
+            <span>Focus Mode</span>
+
+            <small>Lo-fi Coding Mix</small>
+
+        </div>
+
+        <div class="focus-status"></div>
+
+    </button>
+
+    <audio id="bgMusic" loop>
+        <source src="/assets/audio/audioloft.mp3" type="audio/mpeg">
+    </audio>
+
+</div>
 
 </body>
 </html>
