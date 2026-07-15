@@ -2,7 +2,7 @@
 <html lang="<?= e($lang ?? env('LANG_DEFAULT', 'es')) ?>">
   <head>
     <meta charset="UTF-8">
-    <link rel="icon" type="image/svg+xml" href="<?= asset('favicon.svg') ?>">
+    <link rel="icon" type="image/svg+xml" href="<?= asset('portfolio.svg') ?>">
     <link rel="canonical" href="<?= url('/') ?>">
     <title>Mi portfolio</title>
     <meta name="description" content="Portfolio echo por mi.">
@@ -30,7 +30,7 @@
         <section>
 
             <!-- Sección de Presentación sobre mí -->
-            <h2>¿quieres conocerme? </h2>
+            <h2>¿QUIERES CONOCERME?</h2>
 
             <!-- Artículo 10-->
              <!-- presentación -->
@@ -40,22 +40,22 @@
                 
                 <div class="matrix-items">
                     <div class="ficha">
-                        <img src="<?= asset('assets/img/icons/home-solid.svg') ?>" alt="" title="">
+                        <img src="<?= asset('assets/img/icons/atencion.svg') ?>" alt="" title="">
                         <h4 class="sub-header">Atención al detalle</h4>
                         <p>Detecto inconsistencias visuales, errores de accesibilidad y bugs que otros pasan por alto. Mi código es limpio, consistente y bien documentado.</p>
                     </div>
                     <div class="ficha">
-                        <img src="<?= asset('assets/img/icons/garages.svg') ?>" alt="" title="">
+                        <img src="<?= asset('assets/img/icons/pensamiento.svg') ?>" alt="" title="">
                         <h4 class="sub-header">Pensamiento lógico</h4>
                         <p>Descomponer problemas complejos en partes más pequeñas es mi forma natural de pensar. Disfruto depurando y optimizando.</p>
                     </div>
                     <div class="ficha">
-                        <img src="<?= asset('assets/img/icons/furniture.svg') ?>" alt="" title="">
+                        <img src="<?= asset('assets/img/icons/bombilla.svg') ?>" alt="" title="">
                         <h4 class="sub-header">Enfoque profundo</h4>
                         <p>Cuando estoy programando, entro en hiperconcentración. Puedo trabajar durante horas manteniendo altos niveles de calidad.</p>
                     </div>
                     <div class="ficha">
-                        <img src="<?= asset('assets/img/icons/paint-tool.svg') ?>" alt="" title="">
+                        <img src="<?= asset('assets/img/icons/cerebro.svg') ?>" alt="" title="">
                         <h4 class="sub-header">Aprendizaje estructurado</h4>
                         <p>Sigo rutinas de aprendizaje metódicas. Documento todo lo que aprendo y construyo desde los fundamentos hacia arriba.</p>
                     </div>
@@ -134,9 +134,13 @@
             <!-- Qué me gustaría hacer -->
             <article class="art06">
                 <div>
-                    <h3>Qué me gustaría hacer</h3>
-                    <p>Matrix ipsum dolor sit amet, consectetur adipisicing elit. Agent Smith erroribus reiciendis, Zion libertatem defendit dum machinae mundum regunt.</p>
-                    <a href="#" title="" class="boton">CTA</a>
+                    <h3>¿QUE ME GUSTARIA HACER?</h3>
+                    <p>Busco integrarme en proyectos desafiantes donde pueda aportar mi iniciativa y seguir evolucionando como desarrollador. Mi meta es diseñar soluciones digitales que no solo funcionen a la perfección, sino que también dejen huella.</p>
+
+                    <p>Formar parte de equipos dinámicos donde el aprendizaje mutuo, la comunicación y el código limpio sean la prioridad.</p>
+                    <p>Especializarme en tecnologías modernas (como profundizar en frameworks de Frontend o explorar la integración de IA) para crear interfaces más rápidas e intuitivas.</p>
+                    <p>Afrontar retos reales, ayudando a traducir ideas complejas en experiencias web accesibles y atractivas para cualquier usuario.</p>
+                    <a href="#" title="" class="boton">¿Hablamos?</a>
                 </div>     
             </article>
         
@@ -145,7 +149,7 @@
         </section>
 
         <section>
-            <h2>Mis proyectos</h2>
+            <h2>MIS PROYECTOS</h2>
 
             <!-- Artículo 13-->
             <article class="art13">
@@ -209,7 +213,7 @@
                     src="<?= asset('assets/img/test/dummy_1200.avif') ?>"          
                 >
                 <div>
-                    <h3>Eccomerce de una tienda japónesa</h3>
+                    <h3>Ecommerce de una tienda japónesa</h3>
                     <p>Matrix ipsum dolor sit amet, consectetur adipisicing elit. Zion libertatem defendit dum machinae mundum regunt.</p>
                     <p>Matrix ipsum dolor sit amet, consectetur adipisicing elit. Agent Smith erroribus reiciendis et systema simulacrum celat.</p>
                     <a href="#" class="boton">CTA</a>
@@ -245,7 +249,7 @@
             <!-- artForm02 ajax -->
             <article class="artForm02">          
 
-                <h2>Contacta con nosotros</h2>
+                <h2>CONTACTA CONMIGO</h2>
                 <div>
                     <div class="contenedor-form">
                     

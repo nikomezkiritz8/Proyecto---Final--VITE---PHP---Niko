@@ -123,6 +123,9 @@ $tamanoControl: 2.75rem;
 // amplía solamente el elemento que cambia en escritorio.
 .nav01{
     position: sticky;
+    background-image: url(/public/portfolio.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
     top: 0;
     z-index: 1000;
     background-color: rgba(c.$color00, 0.98);

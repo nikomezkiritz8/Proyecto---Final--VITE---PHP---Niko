@@ -46,6 +46,6 @@
   </div>
 
   <div class="footer01__bottom">
-    <p>Desarrollado por xxxx. &copy; <?= date('Y') ?> Todos los derechos reservados.</p>
+    <p>Desarrollado por Niko. &copy; <?= date('Y') ?> Todos los derechos reservados.</p>
   </div>
 </footer>

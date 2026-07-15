@@ -5,7 +5,8 @@
 <nav class="nav01" data-nav01>
   <div class="nav01__inner">
     <a class="nav01__brand" href="/es" aria-label="Ir al inicio">
-      <span class="nav01__logo" aria-hidden="true">NK</span>
+      <span class="nav01__logo" aria-hidden="true"></span>
+      <p>DEV STUDIO</p>
       <span class="nav01__brandText"></span>
     </a>
 

@@ -17,27 +17,31 @@
 
 // Configuración de fuentes
 @font-face {
-    font-family: 'Montserrat';
-    src: url('../../fonts/Montserrat-Regular.ttf');
+    font-family: 'Made';
+    src: url('../../fonts/MADE Evolve Sans EVO.ttf');
+}
+
+@font-face {
+    font-family: 'Louis';
+    src: url('../../fonts/Louis George Cafe.ttf');
 }
 
 
 // Variables del proyecto
-$fuenteTitulos:'Montserrat';
-$fuenteTextos:'Montserrat';
+$fuenteTitulos:'Made';
+$fuenteTextos:'Louis';
 
 
-
-$color00: white;
+$color00: #FAFBFF;
 $color00svg: invert(100%) sepia(100%) saturate(0%) hue-rotate(159deg) brightness(104%) contrast(104%);
 $color00bis: #ebebeb;
-$color01: #1e1e1e;
-$color01bis:rgb(176, 176, 176);
-$color01bis2: rgba(0, 0, 0, 0.5);
-$color02: #234b66;
-$color02bis: #234b66;
+$color01: #0F172A;
+$color01bis: rgb(148, 163, 184);
+$color01bis2: rgba(15, 23, 42, 0.45);
+$color02: #6366F1;
+$color02bis: #4F46E5;
 $color02svg: invert(24%) sepia(13%) saturate(2279%) hue-rotate(161deg) brightness(96%) contrast(88%);
-$color03: #d47523;
+$color03: #F59E0B;
 $color03svg: invert(39%) sepia(100%) saturate(384%) hue-rotate(346deg) brightness(102%) contrast(91%);
 
 
