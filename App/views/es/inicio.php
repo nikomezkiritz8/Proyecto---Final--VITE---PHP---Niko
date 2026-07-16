@@ -547,7 +547,7 @@
                     <p>Formar parte de equipos dinámicos donde el aprendizaje mutuo, la comunicación y el código limpio sean la prioridad.</p>
                     <p>Especializarme en tecnologías modernas (como profundizar en frameworks de Frontend o explorar la integración de IA) para crear interfaces más rápidas e intuitivas.</p>
                     <p>Afrontar retos reales, ayudando a traducir ideas complejas en experiencias web accesibles y atractivas para cualquier usuario.</p>
-                    <a href="#" title="" class="boton">¿Hablamos?</a>
+                    <a href="/es/contacto" title="" class="boton">¿Hablamos?</a>
                 </div>     
             </article>
         
