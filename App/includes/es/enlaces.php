@@ -6,21 +6,21 @@
 <ul class="enlaces01">
   <li class="enlaces01__item">
     <a class="enlaces01__link" href="/es">
-      <img class="enlaces01__icon" src="<?= asset('assets/img/icons/home.svg') ?>" alt="">
+      <img class="enlaces01__icon" src="<?= asset('assets/img/icons/home-solid.svg') ?>" alt="">
       <span>Inicio</span>
     </a>
   </li>
 
   <li class="enlaces01__item">
     <a class="enlaces01__link" href="/es/contacto">
-      <img class="enlaces01__icon" src="<?= asset('assets/img/icons/mail.svg') ?>" alt="">
+      <img class="enlaces01__icon" src="<?= asset('assets/img/icons/contact.svg') ?>" alt="">
       <span>Contacto</span>
     </a>
   </li>
 
   <li class="enlaces01__item">
     <a class="enlaces01__link" href="/es/mis-proyectos">
-      <img class="enlaces01__icon" src="<?= asset('assets/img/icons/users.svg') ?>" alt="">
+      <img class="enlaces01__icon" src="<?= asset('assets/img/icons/proyect.svg') ?>" alt="">
       <span>Mis proyectos</span>
     </a>
   </li>

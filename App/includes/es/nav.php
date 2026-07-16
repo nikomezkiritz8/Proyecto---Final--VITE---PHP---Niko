@@ -58,7 +58,7 @@
       </svg>
 
 </span>
-      <p>DEV STUDIO</p>
+      <p>Niko Studio</p>
       <span class="nav01__brandText"></span>
     </a>
 

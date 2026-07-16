@@ -789,23 +789,25 @@
                         <li>
                         <a href="mailto:aranaz@webda.eus" target="_blank">
                             <img src="<?= asset('assets/img/icons/mail-solid.svg') ?>" alt="" title="">
-                            <span>no-reply@webda.eus</span>
+                            <span>nikomezkiritz8@gmail.com</span>
                         </a>
                         </li>
                         <li>
                         <a href="https://wa.me/628749350" target="_blank">
                             <img src="<?= asset('assets/img/icons/wa.svg') ?>" alt="" title="">
-                            <span>638 141 964</span>
+                            <span>619 820 561</span>
                         </a>
                         </li>
                         <li>
-                        <a href="https://maps.app.goo.gl/Kh7rZM3WF1chSZSj7" target="_blank">
+                        <a href="https://maps.app.goo.gl/8McGED93srpFtGh2A" target="_blank">
                             <img src="<?= asset('assets/img/icons/map-pin-solid.svg') ?>" alt="" title="">
-                            <span>C/ Juan Fermín, Juan F. Gilisagasti Kalea, 4, 1º, 20018 Donostia / San Sebastián, Gipuzkoa</span>
+                            <span>C/ Baratzategui, 10 20015 Donostia / San Sebastián, Gipuzkoa</span>
                         </a>
                         </li>
                     </ul>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1886.901188915529!2d-2.0047191655624914!3d43.29790730427824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd51b013f0513629%3A0x57e4ff3311f619d9!2s%C3%81rea%20Escuela%20de%20Dise%C3%B1o%20y%20Nuevas%20Tecnolog%C3%ADas!5e1!3m2!1ses!2ses!4v1768584957042!5m2!1ses!2ses" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3825.3274131500934!2d-1.9602303874739666!3d43.31393977099972!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd51a57d40720c21%3A0xe2cda6da256c5a1!2sC.%20Baratzategi%2C%2010%2C%2020015%20Donostia%20%2F%20San%20Sebasti%C3%A1n%2C%20Guip%C3%BAzcoa!5e1!3m2!1ses!2ses!4v1784199805278!5m2!1ses!2ses" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            
                     </div>
                 </div>
             </article>

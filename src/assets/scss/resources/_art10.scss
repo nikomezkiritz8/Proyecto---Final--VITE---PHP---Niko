@@ -27,7 +27,7 @@
             gap: 2rem;
         }
         .ficha{
-
+            width: 100%;
             background:#fff;
             border-radius:18px;
             padding:30px;
@@ -67,6 +67,10 @@
                 color:#6C63FF;
 
                 font-size:28px;
+                
+            }
+            svg{
+                filter: c.$color03svg;
             }
 
             p{

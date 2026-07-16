@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 });
 
+// JavaScript del audio
 
 const music = document.getElementById("bgMusic");
 

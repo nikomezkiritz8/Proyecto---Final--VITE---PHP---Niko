@@ -4,6 +4,8 @@ import "./resources/_global.js";
 
 import "./resources/_artForm02.js";
 
+// JavaScript del audio
+
 const music = document.getElementById("bgMusic");
 
 const player = document.getElementById("focusPlayer");

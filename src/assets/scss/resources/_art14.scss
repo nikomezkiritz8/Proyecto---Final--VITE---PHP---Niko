@@ -30,5 +30,11 @@
             width: 100%;
             border-radius: 20px;
         }
+        .contenedor-botones{
+            display: flex;
+            column-gap: 1rem;
+            flex-wrap: wrap;
+            align-items: center;
+        }
     }
 }

@@ -33,12 +33,31 @@
         <article class="art14">
           <div class="content">
             <h2>Portfolio Personal</h2>
-            <span>HTML · SCSS · PHP · Vite</span>
+            <span>HTML · SCSS · PHP · Vite · JavaScript</span>
             <p>Mi carta de presentación digital. Diseñada para demostrar que la accesibilidad, el rendimiento impecable y el diseño interactivo pueden convivir en armonía.</p>
+            <p>Mi portfolio personal nace con un objetivo muy claro: crear una plataforma que represente mi perfil como desarrollador web junior y que, al mismo tiempo, sirva como escaparate de mis conocimientos técnicos y mi forma de trabajar. Más allá de mostrar proyectos, esta web está diseñada para transmitir profesionalidad, organización y atención al detalle desde el primer momento.</p>
+            <p>El desarrollo comenzó con una fase de planificación en la que definí la arquitectura del sitio, la experiencia de usuario y la identidad visual. Quería una interfaz moderna, limpia y fácil de navegar, donde cada sección tuviera un propósito claro y facilitara el acceso a la información más importante.</p>
+            <p>A nivel técnico, el proyecto ha sido desarrollado utilizando HTML semántico para mejorar la accesibilidad y el posicionamiento SEO, SCSS para crear una hoja de estilos modular y fácilmente mantenible, PHP para gestionar funcionalidades dinámicas como el formulario de contacto y Vite como herramienta de desarrollo para optimizar la compilación y mejorar el rendimiento durante el desarrollo.</p>
+            <p>Uno de los aspectos que más importancia recibió fue el diseño responsive. Toda la interfaz se adapta correctamente a ordenadores, tablets y dispositivos móviles, garantizando una experiencia consistente independientemente del tamaño de pantalla.</p>
+            <p>Durante el desarrollo también trabajé aspectos relacionados con la optimización del rendimiento, minimizando recursos, organizando correctamente el código y aplicando una estructura escalable que permita seguir ampliando el proyecto en el futuro.</p>
+
+            <h3>OBJETIVOS ALCANZADOS</h3>
+            
+            <ul>
+              <li>Crear una identidad digital profesional</li>
+              <li>Demostrar conocimientos de desarrollo Front-End</li>
+              <li>Aplicar buenas prácticas de estructura y organización del código</li>
+              <li>Desarrollar una web completamente responsive</li>
+              <li>Mejorar la experiencia del usuario mediante una navegación intuitiva</li>
+              <li>Disponer de un proyecto real que pueda evolucionar continuamente con nuevas funcionalidades y proyectos</li>
+            </ul>
             <img src="<?= asset('assets/img/views/otrohero.avif') ?>" alt="portfolio" title ="portfolio">
-            <a href="/es/mis-proyectos" class="boton">Ver proyecto</a>
-            <a href="/es/mis-proyectos" class="boton">Código</a>
-            <a href="/es/mis-proyectos" class="boton">Caso de estudio</a>
+            <div class="contenedor-botones">
+              <a href="/es/mis-proyectos" class="boton">Ver proyecto</a>
+              <a href="/es/mis-proyectos" class="boton">Código</a>
+              <a href="/es/mis-proyectos" class="boton">Caso de estudio</a>
+            </div>
+            
           </div>
         </article>
         
@@ -53,10 +72,30 @@
             <h2>ARQ Studio</h2>
             <span>HTML · CSS</span>
             <p>Concepto visual y funcional para un estudio de arquitectura contemporáneo de Donostia. Inspirado en líneas rectas, orden estructural y elegancia monocromática.</p>
+            <p>ARQ Studio es una página web conceptual diseñada para un estudio de arquitectura contemporánea. El proyecto busca transmitir elegancia, minimalismo y exclusividad mediante un diseño limpio donde la arquitectura es la auténtica protagonista.</p>
+            <p>Desde el inicio, el objetivo fue construir una experiencia visual muy cuidada, utilizando grandes imágenes, amplios espacios en blanco y una paleta cromática neutra que reforzara la sensación de calidad y sofisticación.</p>
+            <p>La estructura de la página está orientada a presentar los servicios del estudio, mostrar proyectos realizados y facilitar el contacto con posibles clientes. Cada sección ha sido diseñada para que la información sea clara y fácilmente accesible, priorizando siempre la legibilidad y la experiencia del usuario.</p>
+            <p>Uno de los principales retos del proyecto fue conseguir una composición visual equilibrada utilizando únicamente HTML y CSS, prestando especial atención al posicionamiento de los elementos, la jerarquía visual y la adaptación responsive.</p>
+            <p>Este proyecto me permitió profundizar en conceptos relacionados con Flexbox, CSS Grid, diseño adaptable y organización del código CSS, aprendiendo a construir interfaces limpias y escalables.</p>
+
+
+            <h3>ASPECTOS DESTACADOS</h3>
+            
+            <ul>
+              <li>Diseño minimalista inspirado en estudios de arquitectura modernos</li>
+              <li>Uso intensivo de imágenes de gran formato</li>
+              <li>Maquetación completamente responsive</li>
+              <li>Código organizado y fácilmente mantenible</li>
+              <li>Experiencia de navegación elegante y fluida</li>
+            </ul>
             <img src="<?= asset('assets/img/views/casahorizonte.avif') ?>" alt="página de arquitectura" title ="página de arquitectura" >
-            <a href="/es/mis-proyectos" class="boton">Ver proyecto</a>
-            <a href="/es/mis-proyectos" class="boton">Código</a>
-            <a href="/es/mis-proyectos" class="boton">Caso de estudio</a>
+            <div class="contenedor-botones">
+
+              <a href="/es/mis-proyectos" class="boton">Ver proyecto</a>
+              <a href="/es/mis-proyectos" class="boton">Código</a>
+              <a href="/es/mis-proyectos" class="boton">Caso de estudio</a>
+            </div>
+
           </div>
         </article>
       </section>
@@ -70,10 +109,31 @@
             <h2>KOKORO · E-commerce Japonés</h2>
             <span>WordPress</span>
             <p>Demostración de una boutique online dedicada a la importación de tés e inciensos de KOKORO. Combina sobriedad minimalista y dinamismo comercial.</p>
+            <p>KOKORO es un proyecto de comercio electrónico inspirado en la estética japonesa, creado con el objetivo de ofrecer una experiencia de compra sencilla, elegante y centrada en el producto.</p>
+            <p>La idea principal consistía en construir una tienda online donde el diseño transmitiera los valores asociados a la cultura japonesa: equilibrio, sencillez, armonía y atención al detalle. Para ello se eligió una estética minimalista con colores suaves, tipografías limpias y una distribución que permite que cada producto destaque por sí mismo.</p>
+            <p>El proyecto fue desarrollado utilizando WordPress como gestor de contenidos, aprovechando su flexibilidad para gestionar productos, categorías y contenido dinámico de forma sencilla.</p>
+            <p>Además del diseño visual, se trabajó especialmente la experiencia del usuario durante el proceso de compra, organizando la navegación para que el cliente pudiera localizar rápidamente los productos, consultar la información necesaria y completar la compra con el menor número posible de pasos.</p>
+            <p>También se prestó atención al diseño responsive, garantizando una experiencia cómoda tanto desde ordenador como desde dispositivos móviles.</p>
+
+            <h3>CARACTERISTICAS PRINCIPALES</h3>
+            
+
+            <ul>
+              <li>Diseño inspirado en la filosofía japonesa.</li>
+              <li>Navegación sencilla e intuitiva.</li>       
+              <li>Catálogo organizado por categorías.</li>
+              <li>Fichas de producto claras y visuales.</li>
+              <li>Interfaz responsive.</li>
+              <li>Enfoque centrado en la experiencia de compra.</li>
+            </ul>
+
             <img src="<?= asset('assets/img/views/japo.avif') ?>" alt="ecommerce japones" title ="ecommerce japones">
-            <a href="/es/mis-proyectos" class="boton">Ver proyecto</a>
-            <a href="/es/mis-proyectos" class="boton">Código</a>
-            <a href="/es/mis-proyectos" class="boton">Caso de estudio</a>
+            <div class="contenedor-botones">
+              <a href="/es/mis-proyectos" class="boton">Ver proyecto</a>
+              <a href="/es/mis-proyectos" class="boton">Código</a>
+              <a href="/es/mis-proyectos" class="boton">Caso de estudio</a>
+            </div>
+            
           </div>
         </article>
       </section>
@@ -81,7 +141,13 @@
 
       <section id="section5">
         <!-- Galeria de proyectos realizados -->
-        <h2 data-lang="encabezado">Mi proceso</h2>
+        <h2 data-lang="encabezado">MI PROCESO DE TRABAJO</h2>
+        <p>Cada proyecto que desarrollo sigue una metodología que me ayuda a mantener el código organizado y ofrecer soluciones bien estructuradas.</p>
+        <p><strong>1. Investigación y análisis</strong></p>
+        <p><strong>2. Diseño de la interfaz</strong></p>
+        <p><strong>3. Desarrollo</strong></p>
+        <p><strong>4. Pruebas y optimización</strong></p>
+        <p><strong>5. Entrega y mejora continua</strong></p>
 
         <article class="art11">
               <h3></h3>

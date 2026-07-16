@@ -9,6 +9,8 @@ document.addEventListener("DOMContentLoaded", () => {
   artSlider();
 });
 
+// JavaScript del audio
+
 const music = document.getElementById("bgMusic");
 
 const player = document.getElementById("focusPlayer");

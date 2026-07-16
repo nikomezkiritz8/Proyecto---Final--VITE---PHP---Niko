@@ -1,6 +1,7 @@
 <?php
 // Footer en castellano. Los textos, rutas y datos de contacto se editan aquí
 // sin depender de arrays de configuración ni de condiciones de idioma.
+
 ?>
 <footer class="footer01">
   <div class="footer01__inner">
@@ -26,21 +27,52 @@
       <h2 class="footer01__title" id="footer01-contact-title-es">Contacto</h2>
       <address class="footer01__address">
         <a class="footer01__link" href="tel:+34000000000">
-          <img class="footer01__icon" src="<?= asset('assets/img/icons/phone.svg') ?>" alt="">
-          <span>+34 000 000 000</span>
+          <img class="footer01__icon" src="<?= asset('assets/img/icons/telephone.svg') ?>" alt="">
+          <span>+638 141 964</span>
         </a>
         <a class="footer01__link" href="mailto:hola@ejemplo.com">
-          <img class="footer01__icon" src="<?= asset('assets/img/icons/mail.svg') ?>" alt="">
-          <span>hola@ejemplo.com</span>
+          <img class="footer01__icon" src="<?= asset('assets/img/icons/email.svg') ?>" alt="">
+          <span>nikomezkiritz8@gmail.com</span>
         </a>
         <a class="footer01__link" href="https://www.google.com/maps/search/?api=1&query=Calle+Ejemplo+1" target="_blank" rel="noopener noreferrer">
-          <img class="footer01__icon" src="<?= asset('assets/img/icons/map.svg') ?>" alt="">
+          <img class="footer01__icon" src="<?= asset('assets/img/icons/google-maps.svg') ?>" alt="">
           <span>Ver en Google Maps</span>
         </a>
         <p class="footer01__text">
-          <img class="footer01__icon" src="<?= asset('assets/img/icons/pin.svg') ?>" alt="">
-          <span>Calle Ejemplo 1, 00000 Ciudad</span>
+          <img class="footer01__icon" src="<?= asset('assets/img/icons/maps-square-02.svg') ?>" alt="">
+          <span>Calle Baratzategui 10, Donostia</span>
         </p>
+
+        <div class="footer01__social">
+
+          <a
+              class="footer01__socialLink"
+              href="https://github.com/nikomezkiritz8"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub">
+
+              <img
+                  src="<?= asset('assets/img/icons/github-loop.svg') ?>"
+                  alt=""
+                  class="footer01__socialIcon">
+          </a>
+
+          <a
+              class="footer01__socialLink"
+              href="https://www.linkedin.com/in/niko-mezkiritz-8151b92b1/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn">
+
+              <img
+                  src="<?= asset('assets/img/icons/linkedin.svg') ?>"
+                  alt=""
+                  class="footer01__socialIcon">
+          </a>
+
+        </div>
+
       </address>
     </section>
   </div>

@@ -40,9 +40,9 @@ $color01bis: rgb(148, 163, 184);
 $color01bis2: rgba(15, 23, 42, 0.45);
 $color02: #6366F1;
 $color02bis: #4F46E5;
-$color02svg: invert(24%) sepia(13%) saturate(2279%) hue-rotate(161deg) brightness(96%) contrast(88%);
+$color02svg: invert(29%) sepia(98%) saturate(4024%) hue-rotate(238deg) brightness(91%) contrast(97%);
 $color03: #F59E0B;
-$color03svg: invert(39%) sepia(100%) saturate(384%) hue-rotate(346deg) brightness(102%) contrast(91%);
+$color03svg: invert(75%) sepia(21%) saturate(5619%) hue-rotate(353deg) brightness(96%) contrast(100%);
 $color04: #374151;
 
 
@@ -101,7 +101,7 @@ h4{
     letter-spacing: 2px;
     font-weight: 600;
 }
-p, span, label{
+p, span, label, li{
     font-family: $fuenteTextos;
     color: $color01;
 }
@@ -190,4 +190,12 @@ section{
             row-gap: 4rem;
         }
     }
+}
+
+
+ul{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    list-style:disc;
 }

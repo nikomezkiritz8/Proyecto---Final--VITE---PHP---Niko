@@ -190,7 +190,7 @@
                     <h2>¿QUE DICEN QUIENES HAN TRABAJADO CONMIGO?</h2>
                     <p>Me enorgullece construir relaciones basadas en la confianza y el resultado.</p>
                     </div>
-                    <img src="<?= asset('assets/img/test/dummy02.avif') ?>" alt="Escena de Matrix">
+                    <img src="<?= asset('assets/img/views/enseñando.avif') ?>" alt="Escena de dos personas hablando" title="personas hablando">
                 </div>
             
             </article>
@@ -206,28 +206,28 @@
                 <div class="contenedor-fichas">
                     <div class="ficha">
                         <h3>Leire</h3>
-                        <img src="<?= asset('assets/img/test/dummy01.avif') ?>" alt="Escena de Matrix" title="">                        
+                        <img src="<?= asset('assets/img/views/leire.avif') ?>" alt="Leire" title="Leire">                        
                         <p>"Niko aportó una perspectiva fresca a nuestro proyecto. Su capacidad para detectar detalles que nosotros pasamos por alto mejoró mucho la experiencia final."</p>
                         <span class="ralla"></span>
                     </div>
 
                     <div class="ficha">
                         <h3>Ibon</h3>
-                        <img src="<?= asset('assets/img/test/dummy02.avif') ?>" alt="Escena de Matrix" title="">                        
+                        <img src="<?= asset('assets/img/views/ibon.avif') ?>" alt="Ibon" title="Ibon">                        
                         <p>"Rápido, metódico y con mucha iniciativa. Entregó el proyecto antes de lo previsto y el código estaba impecablemente organizado."</p>
                         <span class="ralla"></span>
                     </div>
 
                     <div class="ficha">
                         <h3>Igor</h3>
-                        <img src="<?= asset('assets/img/test/dummy03.avif') ?>" alt="Escena de Matrix" title="">                        
+                        <img src="<?= asset('assets/img/views/igor.avif') ?>" alt="Igor" title="Igor">                        
                         <p>"Trabajar con él fue sencillo desde el primer día. Se adaptó a nuestro flujo, preguntó lo necesario y resolvió problemas complejos con calma."</p>
                         <span class="ralla"></span>
                     </div>
 
                     <div class="ficha">
                         <h3>Laura</h3>
-                        <img src="<?= asset('assets/img/test/dummy04.avif') ?>" alt="Escena de Matrix" title="">                        
+                        <img src="<?= asset('assets/img/views/laura.avif') ?>" alt="Laura" title="Laura">                        
                         <p>"Su enfoque en la accesibilidad y el rendimiento nos hizo replantearnos cómo enfrentábamos el frontend. Un gran aporte para el equipo."</p>
                         <span class="ralla"></span>
                     </div>
