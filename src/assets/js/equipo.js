@@ -2,6 +2,7 @@
 import "../scss/equipo.scss";
 import "./resources/_global.js";
 import artSlider from "./resources/_artSlider.js";
+import "./resources/_artForm02.js";
 
 document.addEventListener("DOMContentLoaded", () => {
     artSlider();

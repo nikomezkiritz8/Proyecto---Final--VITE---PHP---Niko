@@ -5,7 +5,7 @@
     <link rel="icon" type="image/svg+xml" href="<?= asset('assets/img/icons/favicon.svg') ?>">
     <link rel="canonical" href="<?= url('/mis-proyectos') ?>">
     <title>Mis proyectos</title>
-    <meta name="description" content="Conoce al equipo de panaderos y pasteleros que trabaja cada dia en nuestro obrador.">
+    <meta name="description" content="Conoce aqui mis proyectos y sus detalles.">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?= vite_tags($route['resources'] ?? null) ?>
@@ -223,6 +223,9 @@
         </article>
 
       </section>
+
+      <!-- antes estaba la sección estática de contacto -->
+      <?php require app_path('includes/es/section_form.php'); ?>
 
     </main>
 
