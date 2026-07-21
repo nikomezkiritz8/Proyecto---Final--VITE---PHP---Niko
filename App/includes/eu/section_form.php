@@ -2,7 +2,7 @@
             <!-- artForm02 ajax -->
             <article class="artForm02">          
 
-                <h2>CONTACTA CONMIGO</h2>
+                <h2>JARRI NIREKIN HARREMANETAN</h2>
                 <div>
                     <div class="contenedor-form">
                     
@@ -12,9 +12,9 @@
                     <!-- MODAL QUE SALE CUANDO SE ENVÍA EL FORM CON ÉXITO -->
                     <div id="modal_envio">
                         <!-- nuestro modal con html y css -->
-                        <h3 id="h3_modal_envio">Gracias por escribirnos</h3>
-                        <p id="p_modal_envio">Matrix ipsum dolor sit amet, consectetur adipisicing elit. Neo eligendi veritatis codicem et simulacrum.</p>
-                        <div class="boton" id="boton_modal_envio">Escribir otra consulta</div>
+                        <h3 id="h3_modal_envio">Eskerrik asko gurekin harremanetan jartzeagatik.</h3>
+                        <p id="p_modal_envio">Zure mezua zuzen jaso dugu. Lehenbailehen jarriko gara zurekin harremanetan.</p>
+                        <div class="boton" id="boton_modal_envio">Beste kontsulta bat egin</div>
                     </div>
 
                     <form id="idForAjax" action="/app/artForm02" method="post">
@@ -22,42 +22,42 @@
                         <p class="error" id="errorForm02"></p>
 
                         <!-- nombre -->
-                        <label for="nombreAjax">Nombre *</label>
-                        <input type="text" id="nombreAjax" name="nombre" placeholder="Escribe aquí tu nombre *">
+                        <label for="nombreAjax">Izena *</label>
+                        <input type="text" id="nombreAjax" name="nombre" placeholder="Idatzi hemen zure izena *">
 
                         <!-- teléfono -->
-                        <label for="telefonoAjax">Teléfono *</label>
-                        <input type="tel" id="telefonoAjax" name="telefono" placeholder="Escribe aquí tu teléfono *">
+                        <label for="telefonoAjax">Mugikorra *</label>
+                        <input type="tel" id="telefonoAjax" name="telefono" placeholder="Idatzi hemen zure mugikorra *">
 
                         <!-- Correo -->
-                        <label for="emailAjax">Correo Electrónico</label>
-                        <input type="email" id="emailAjax" name="email" placeholder="Escribe aquí tu correo electrónico">
+                        <label for="emailAjax">Helbide elektronikoa</label>
+                        <input type="email" id="emailAjax" name="email" placeholder="Idatzi hemen zure helbide elektronikoa">
 
                         <!-- Mensaje -->
-                        <label for="mensajeAjax">Escribe tu mensaje</label>
-                        <textarea name="mensaje" id="mensajeAjax" placeholder="Escribe aquí tu mensaje"></textarea>
+                        <label for="mensajeAjax">Idatzi zure mezua</label>
+                        <textarea name="mensaje" id="mensajeAjax" placeholder="Idatzi hemen zure mezua"></textarea>
 
                         <!-- términos -->
                         <div class="horizontal">
-                        <label for="terminosAjax">Aceptar términos y condiciones de privacidad</label>
+                        <label for="terminosAjax">Baldintzak eta pribatutasuna onartu</label>
                         <input type="checkbox" name="terminos" id="terminosAjax">
                         </div>
                         
 
                         <!-- captcha -->
-                        <label for="respuesta">Resuelve</label>
+                        <label for="respuesta">Ebatzi</label>
                         <div class="horizontal">
                         <span id="num1ajax"></span>
                         <span id="operadorajax"></span>
                         <span id="num2ajax"></span>
-                        <input type="text" name="respUser" id="respuestaajax" placeholder="Respuesta" autocomplete="off">
+                        <input type="text" name="respUser" id="respuestaajax" placeholder="Erantzuna" autocomplete="off">
                         <input type="hidden" name="respSystem" id="respSystemajax" value="">
                         </div>
 
                         <input type="hidden" name="url" value="<?= e($url) ?>">
                         <input type="hidden" name="lang" value="<?= e($lang) ?>">
 
-                        <input type="submit" class="boton" value="Enviar" id="botonEnviarAjax">
+                        <input type="submit" class="boton" value="Bidali" id="botonEnviarAjax">
                     </form>
                     
                     <div class="moduloLoader01" id="moduloLoader01">
@@ -145,7 +145,7 @@
                         <li>
                         <a href="https://maps.app.goo.gl/8McGED93srpFtGh2A" target="_blank">
                             <img src="<?= asset('assets/img/icons/map-pin-solid.svg') ?>" alt="" title="">
-                            <span>C/ Baratzategui, 10 20015 Donostia / San Sebastián, Gipuzkoa</span>
+                            <span>Baratzategi kalea, 10 20015 Donostia, Gipuzkoa</span>
                         </a>
                         </li>
                     </ul>

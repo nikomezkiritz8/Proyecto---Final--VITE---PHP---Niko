@@ -12,8 +12,8 @@
                     <!-- MODAL QUE SALE CUANDO SE ENVÍA EL FORM CON ÉXITO -->
                     <div id="modal_envio">
                         <!-- nuestro modal con html y css -->
-                        <h3 id="h3_modal_envio">Matrix ipsum modal</h3>
-                        <p id="p_modal_envio">Matrix ipsum dolor sit amet, consectetur adipisicing elit. Neo eligendi veritatis codicem et simulacrum.</p>
+                        <h3 id="h3_modal_envio">Gracias por escribirnos</h3>
+                        <p id="p_modal_envio">Hemos recibido tu mensaje correctamente. Nos pondremos en contacto contigo lo antes posible.</p>
                         <div class="boton" id="boton_modal_envio">Escribir otra consulta</div>
                     </div>
 
