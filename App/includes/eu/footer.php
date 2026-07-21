@@ -29,7 +29,7 @@
           <img class="footer01__icon" src="<?= asset('assets/img/icons/telephone.svg') ?>" alt="">
           <span>+34 638 141 964</span>
         </a>
-        <a class="footer01__link" href="mailto:hola@ejemplo.com">
+        <a class="footer01__link" href="mailto:nikomezkiritz8@gmail.com">
           <img class="footer01__icon" src="<?= asset('assets/img/icons/email.svg') ?>" alt="">
           <span>nikomezkiritz8@gmail.com</span>
         </a>

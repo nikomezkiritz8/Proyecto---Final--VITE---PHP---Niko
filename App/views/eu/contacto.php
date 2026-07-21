@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <link rel="icon" type="image/svg+xml" href="<?= asset('favicon.svg') ?>">
     <link rel="canonical" href="<?= url('/kontaktua') ?>">
-    <title>Jarri nirekin harremanetan</title>
-    <meta name="description" content="Jarri nirekin harremanetan Donostian edo urrutitik web garatzaile junior gisa lan-aukerei, web proiektuei eta lankidetza-aukerei buruz hitz egiteko.">
+    <title>Kontaktua | Niko Mezkiritz — Hitz egin dezagun zure proiektuari buruz</title>
+    <meta name="description" content="Jarri harremanetan Niko Mezkiritzekin web garapenari, diseinuari eta proiektu digitalei buruz hitz egiteko. Konta iezadazu zure ideia eta eraiki dezagun neurriko irtenbide bat.">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?= vite_tags($route['resources'] ?? null) ?>

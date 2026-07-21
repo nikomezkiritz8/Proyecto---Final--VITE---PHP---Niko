@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <link rel="icon" type="image/svg+xml" href="<?= asset('assets/img/icons/favicon.svg') ?>">
     <link rel="canonical" href="<?= url('/contacto') ?>">
-    <title>Contacta conmigo</title>
-    <meta name="description" content="Contacta conmigo para oportunidades laborales, proyectos web y colaboraciones como desarrollador web junior en Donostia o en remoto.">
+    <title>Contacto | Niko Mezkiritz — Hablemos de tu proyecto</title>
+    <meta name="description" content="Contacta con Niko Mezkiritz para hablar sobre desarrollo web, diseño y proyectos digitales. Cuéntame tu idea y construyamos una solución a medida.">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?= vite_tags($route['resources'] ?? null) ?>

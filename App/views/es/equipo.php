@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <link rel="icon" type="image/svg+xml" href="<?= asset('assets/img/icons/favicon.svg') ?>">
     <link rel="canonical" href="<?= url('/mis-proyectos') ?>">
-    <title>Mis proyectos</title>
-    <meta name="description" content="Conoce aqui mis proyectos y sus detalles.">
+    <title>Proyectos | Niko Mezkiritz — Desarrollo Full Stack</title>
+    <meta name="description" content="Explora los proyectos de Niko Mezkiritz: aplicaciones web, diseño, desarrollo Full Stack y soluciones digitales creadas con tecnologías modernas.">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?= vite_tags($route['resources'] ?? null) ?>

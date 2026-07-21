@@ -5,10 +5,10 @@ return [
     'lang_default' => env('LANG_DEFAULT', 'es'),
     'global_routes' => [
         // comentar cuando subamos a producción para que no exista una url de showroom
-        '/showroom' => [
-            'view' => 'showroom.php',
-            'resources' => 'src/assets/js/showroom.js',
-        ],
+        // '/showroom' => [
+        //     'view' => 'showroom.php',
+        //     'resources' => 'src/assets/js/showroom.js',
+        // ],
     ],
 
     // Rutas que reciben formularios. La clave es el action del formulario y

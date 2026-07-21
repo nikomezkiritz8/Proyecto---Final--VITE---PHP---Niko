@@ -3,4 +3,4 @@ User-agent: *
 Allow: /
 Disallow: /showroom
 
-Sitemap: https://www.ejemplo.com/sitemap.xml
+Sitemap: https://cw-niko.webda.eus/sitemap.xml

@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <link rel="icon" type="image/svg+xml" href="<?= asset('assets/img/icons/favicon.svg') ?>">
     <link rel="canonical" href="<?= url('/') ?>">
-    <title>Mi portfolio</title>
-    <meta name="description" content="Portfolio echo por mi.">
+    <title>Niko Mezkiritz | Desarrollador Full Stack y Portfolio</title>
+    <meta name="description" content="Portfolio de Niko Mezkiritz, desarrollador Full Stack. Descubre mis proyectos web, habilidades, experiencia y proceso creativo.">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
