@@ -26,19 +26,19 @@
       <h2 class="footer01__title" id="footer01-contact-title-eu">Kontaktua</h2>
       <address class="footer01__address">
         <a class="footer01__link" href="tel:+34638141964">
-          <img class="footer01__icon" src="<?= asset('assets/img/icons/telephone.svg') ?>" alt="">
+          <img class="footer01__icon" src="<?= asset('assets/img/icons/telephone.svg') ?>" alt="mugikorra" title="mugikorra">
           <span>+34 638 141 964</span>
         </a>
         <a class="footer01__link" href="mailto:nikomezkiritz8@gmail.com">
-          <img class="footer01__icon" src="<?= asset('assets/img/icons/email.svg') ?>" alt="">
+          <img class="footer01__icon" src="<?= asset('assets/img/icons/email.svg') ?>" alt="email-a" title="email-a">
           <span>nikomezkiritz8@gmail.com</span>
         </a>
         <a class="footer01__link" href="https://www.google.com/maps/search/?api=1&query=Calle+Ejemplo+1" target="_blank" rel="noopener noreferrer">
-          <img class="footer01__icon" src="<?= asset('assets/img/icons/google-maps.svg') ?>" alt="">
+          <img class="footer01__icon" src="<?= asset('assets/img/icons/google-maps.svg') ?>" alt="mapa" title="mapa">
           <span>Ikusi Google Mapsen</span>
         </a>
         <p class="footer01__text">
-          <img class="footer01__icon" src="<?= asset('assets/img/icons/maps-square-02.svg') ?>" alt="">
+          <img class="footer01__icon" src="<?= asset('assets/img/icons/maps-square-02.svg') ?>" alt="pin" title="pin">
           <span>Baratzategi Kalea 10, Donostia</span>
         </p>
       </address>
@@ -54,7 +54,8 @@
 
               <img
                   src="<?= asset('assets/img/icons/github-loop.svg') ?>"
-                  alt=""
+                  alt="github"
+                  title="github"
                   class="footer01__socialIcon">
           </a>
 
@@ -67,7 +68,8 @@
 
               <img
                   src="<?= asset('assets/img/icons/linkedin.svg') ?>"
-                  alt=""
+                  alt="linkedin"
+                  title="linkedin"
                   class="footer01__socialIcon">
           </a>
 

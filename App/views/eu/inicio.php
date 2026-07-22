@@ -2,7 +2,7 @@
 <html lang="<?= e($lang ?? env('LANG_DEFAULT', 'es')) ?>">
   <head>
     <meta charset="UTF-8">
-    <link rel="icon" type="image/svg+xml" href="<?= asset('favicon.svg') ?>">
+    <link rel="icon" type="image/svg+xml" href="<?= asset('assets/img/icons/favicon.svg') ?>">
     <link rel="canonical" href="<?= url('/') ?>">
     <title>Niko Mezkiritz | Garatzaile Full Stack-a eta Portfolioa</title>
     <meta name="description" content="Niko Mezkiritzen portfolioa, Full Stack garatzailea. Ezagutu nire web proiektuak, gaitasunak, esperientzia eta sormen-prozesua.">
@@ -556,8 +556,8 @@
             <!-- Artículo 13-->
             <article class="art13">
                 <img
-                    alt="" 
-                    title=""
+                    alt="Donostiako bistak" 
+                    title="Donostiako bistak"
                     srcset="
                     <?= asset('assets/img/views/portfolio.avif') ?> 1800w,
                     <?= asset('assets/img/views/portfolio.avif') ?> 1200w
@@ -580,8 +580,8 @@
             <!-- Artículo 13 invertido -->
             <article class="art13 upsidedown">
                 <img
-                    alt="" 
-                    title=""
+                    alt="Donostiko kanpoko etxea" 
+                    title="Donostiko kanpoko etxea"
                     srcset="
                     <?= asset('assets/img/views/arquitectura.avif') ?> 1800w,
                     <?= asset('assets/img/views/arquitectura.avif') ?> 1200w
@@ -603,8 +603,8 @@
             <!-- Artículo 13 -->
             <article class="art13">
                 <img
-                    alt="" 
-                    title=""
+                    alt="japoniako neska tea hartzen" 
+                    title="japoniako neska tea hartzen"
                     srcset="
                     <?= asset('assets/img/views/chicajapo.avif') ?> 1800w,
                     <?= asset('assets/img/views/chicajapo.avif') ?> 1200w
@@ -626,8 +626,8 @@
             <!-- Artículo 13 invertido -->
             <article class="art13 upsidedown">
                 <img
-                    alt="" 
-                    title=""
+                    alt="teknologia airean" 
+                    title="teknologia airean"
                     srcset="
                     <?= asset('assets/img/views/tuempresa.avif') ?> 1800w,
                     <?= asset('assets/img/views/tuempresa.avif') ?> 1200w

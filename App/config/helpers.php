@@ -89,6 +89,133 @@ function enviarRespuestaAsincrona(string $mensaje, bool $fallo, string $param3):
     exit;
 }
 
+// Construye el mapa idioma => ruta equivalente segun la posicion definida en config.php.
+
+function rutas_homologas(?string $rutaActual): array
+
+{
+
+    $routes = $GLOBALS['app_routes'] ?? null;
+
+ 
+
+    // Permite usar el helper fuera del front controller sin duplicar la configuracion.
+
+    if (!is_array($routes)) {
+
+        static $routesConfig;
+
+ 
+
+        if (!is_array($routesConfig ?? null)) {
+
+            $config = require app_path('config/config.php');
+
+            $routesConfig = is_array($config['routes'] ?? null) ? $config['routes'] : [];
+
+        }
+
+ 
+
+        $routes = $routesConfig;
+
+    }
+
+ 
+
+    $posicion = 0;
+
+ 
+
+    if ($rutaActual !== null && trim($rutaActual) !== '') {
+
+        $path = parse_url($rutaActual, PHP_URL_PATH);
+
+ 
+
+        if (is_string($path) && $path !== '' && $path !== '/') {
+
+            $path = '/' . trim(urldecode($path), '/');
+
+            $idiomaOrigen = explode('/', trim($path, '/'))[0] ?? '';
+
+            $rutasOrigen = isset($routes[$idiomaOrigen]) && is_array($routes[$idiomaOrigen])
+
+                ? array_keys($routes[$idiomaOrigen])
+
+                : [];
+
+            $posicionEncontrada = array_search($path, $rutasOrigen, true);
+
+            $posicion = $posicionEncontrada === false ? null : $posicionEncontrada;
+
+        }
+
+    }
+
+ 
+
+    $rutasHomologas = [];
+
+ 
+
+    foreach ($routes as $idioma => $rutasIdioma) {
+
+        if (!is_array($rutasIdioma)) {
+
+            continue;
+
+        }
+
+ 
+
+        $rutasIdioma = array_keys($rutasIdioma);
+
+ 
+
+        if ($posicion !== null && array_key_exists($posicion, $rutasIdioma)) {
+
+            $rutasHomologas[$idioma] = $rutasIdioma[$posicion];
+
+            continue;
+
+        }
+
+ 
+
+        $ruta404 = '/' . $idioma . '/404';
+
+        $rutasHomologas[$idioma] = in_array($ruta404, $rutasIdioma, true)
+
+            ? $ruta404
+
+            : ($rutasIdioma[0] ?? '/' . $idioma);
+
+    }
+
+ 
+
+    return $rutasHomologas;
+
+}
+
+ 
+
+function ruta_homologa(?string $rutaActual, string $idiomaDestino): string
+
+{
+
+    $rutasHomologas = rutas_homologas($rutaActual);
+
+ 
+
+    return $rutasHomologas[$idiomaDestino]
+
+        ?? ($rutasHomologas[array_key_first($rutasHomologas)] ?? '/');
+
+}
+
+
 function route_url(string $path = '/'): string
 {
     $lang = $GLOBALS['lang'] ?? env('LANG_DEFAULT', 'es');

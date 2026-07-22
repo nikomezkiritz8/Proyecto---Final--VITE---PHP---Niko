@@ -6,21 +6,21 @@
 <ul class="enlaces01">
   <li class="enlaces01__item">
     <a class="enlaces01__link" href="/eu">
-      <img class="enlaces01__icon" src="<?= asset('assets/img/icons/home-solid.svg') ?>" alt="">
+      <img class="enlaces01__icon" src="<?= asset('assets/img/icons/home-solid.svg') ?>" alt="etxea" title="etxea">
       <span>Hasiera</span>
     </a>
   </li>
 
   <li class="enlaces01__item">
     <a class="enlaces01__link" href="/eu/kontaktua">
-      <img class="enlaces01__icon" src="<?= asset('assets/img/icons/contact.svg') ?>" alt="">
+      <img class="enlaces01__icon" src="<?= asset('assets/img/icons/contact.svg') ?>" alt="kontaktua" title="kontaktua">
       <span>Kontaktua</span>
     </a>
   </li>
 
   <li class="enlaces01__item">
     <a class="enlaces01__link" href="/eu/nere-proiektuak">
-      <img class="enlaces01__icon" src="<?= asset('assets/img/icons/proyect.svg') ?>" alt="">
+      <img class="enlaces01__icon" src="<?= asset('assets/img/icons/proyect.svg') ?>" alt="proiektuak" title="proiektuak">
       <span>Proiektuak</span>
     </a>
   </li>

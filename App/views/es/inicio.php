@@ -254,7 +254,7 @@
     <?php require app_path('includes/es/nav.php'); ?>
 
     <header class="header01">
-      <img class="header01__media" src="<?= asset('assets/img/views/hero-bg.avif') ?>" alt="Escena de Matrix">
+      <img class="header01__media" src="<?= asset('assets/img/views/hero-bg.avif') ?>" alt="Programando en Donosti" title="Programando en Donosti">
       <div class="header01__content">
         <p class="header01__eyebrow"></p>
         <h1>Desarrollador Web Front-End</h1>
@@ -561,8 +561,8 @@
             <!-- Artículo 13-->
             <article class="art13">
                 <img
-                    alt="" 
-                    title=""
+                    alt="Ordenador vistas a Donosti" 
+                    title="Ordenador vistas a Donosti"
                     srcset="
                     <?= asset('assets/img/views/portfolio.avif') ?> 1800w,
                     <?= asset('assets/img/views/portfolio.avif') ?> 1200w
@@ -585,8 +585,8 @@
             <!-- Artículo 13 invertido -->
             <article class="art13 upsidedown">
                 <img
-                    alt="" 
-                    title=""
+                    alt="Casa a fueras de Donosti" 
+                    title="Casa a fueras de Donosti"
                     srcset="
                     <?= asset('assets/img/views/arquitectura.avif') ?> 1800w,
                     <?= asset('assets/img/views/arquitectura.avif') ?> 1200w
@@ -608,8 +608,8 @@
             <!-- Artículo 13 -->
             <article class="art13">
                 <img
-                    alt="" 
-                    title=""
+                    alt="Chica japonesa sirviendose té" 
+                    title="Chica japonesa sirviendose té"
                     srcset="
                     <?= asset('assets/img/views/chicajapo.avif') ?> 1800w,
                     <?= asset('assets/img/views/chicajapo.avif') ?> 1200w
@@ -631,12 +631,13 @@
             <!-- Artículo 13 invertido -->
             <article class="art13 upsidedown">
                 <img
-                    alt="" 
-                    title=""
+                    alt="Tecnología flotando en el aire" 
+                    title="Tecnología flotando en el aire"
                     srcset="
                     <?= asset('assets/img/views/tuempresa.avif') ?> 1800w,
                     <?= asset('assets/img/views/tuempresa.avif') ?> 1200w
-                    
+                    "
+
                     sizes="
                     (max-width:800px) 900px,
                     1500px
@@ -667,7 +668,7 @@
 
             <div class="focus-icon">
 
-                <img src="<?= asset('assets/img/icons/headphones.svg') ?>" alt="Focus Mode">
+                <img src="<?= asset('assets/img/icons/headphones.svg') ?>" alt="Focus Mode" title="Focus Mode">
 
             </div>
 

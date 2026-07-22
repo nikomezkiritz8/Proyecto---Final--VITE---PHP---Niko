@@ -19,7 +19,7 @@
         <p class="header02__eyebrow">PROYECTOS</p>
         <h1 class="header02__title">Lo que he construido</h1>
         <p class="header02__text">Una selección de aplicaciones web y proyectos donde he aplicado HTML, CSS, JavaScript, PHP y otras tecnologías para crear soluciones funcionales y modernas.</p>
-        <a href="#showroom-recursos" class="boton">Ponte en contacto</a>
+        <a href="/es/contacto" class="boton">Ponte en contacto</a>
         </div>
     </header>
 
