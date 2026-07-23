@@ -8,6 +8,7 @@
     <meta name="description" content="Información legal tipo sobre titularidad, privacidad, protección de datos y gestión de cookies.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?= vite_tags($route['resources'] ?? null) ?>
+    <?php require app_path('includes/cookielad.php'); ?>
   </head>
   <body>
     <?php require app_path('includes/es/nav.php'); ?>

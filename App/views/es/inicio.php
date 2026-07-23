@@ -11,6 +11,7 @@
 
    
     <?= vite_tags($route['resources'] ?? null) ?>
+    <?php require app_path('includes/cookielad.php'); ?>
   </head>
 
   <style>
