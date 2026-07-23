@@ -1,11 +1,6 @@
 <?php
 
 $requestPath = parse_url($_SERVER['REQUEST_URI'] ?? '/', PHP_URL_PATH) ?: '/';
-$staticFile = __DIR__ . $requestPath;
-
-if (PHP_SAPI === 'cli-server' && is_file($staticFile)) {
-    return false;
-}
 
 require_once dirname(__DIR__) . '/vendor/autoload.php';
 
@@ -13,6 +8,13 @@ $dotenv = Dotenv\Dotenv::createImmutable(dirname(__DIR__));
 $dotenv->safeLoad();
 
 require_once dirname(__DIR__) . '/App/config/helpers.php';
+
+$requestPath = app_request_path($requestPath);
+$staticFile = __DIR__ . $requestPath;
+
+if (PHP_SAPI === 'cli-server' && is_file($staticFile)) {
+    return false;
+}
 
 $config = require app_path('config/config.php');
 $globalRoutes = $config['global_routes'] ?? [];
@@ -58,7 +60,7 @@ if ($requestMethod === 'POST') {
 
 if ($url === '/') {
     header('HTTP/1.1 301 Moved Permanently');
-    header('Location: /' . $langDefault);
+    header('Location: ' . app_url('/' . $langDefault));
     exit;
 }
 
@@ -82,6 +84,7 @@ if ($isGlobalRoute) {
 $GLOBALS['lang'] = $lang;
 $GLOBALS['app_langs'] = $langs;
 $GLOBALS['app_global_routes'] = array_keys($globalRoutes);
+$GLOBALS['app_routes'] = $routes;
 
 if ($route === null) {
     http_response_code(404);

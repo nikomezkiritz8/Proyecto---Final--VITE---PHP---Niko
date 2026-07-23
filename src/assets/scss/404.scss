@@ -1,2 +1,277 @@
 @use "./resources/config" as c;
 @use "./resources/global";
+
+.error404 {
+  position: relative;
+  isolation: isolate;
+  display: grid;
+  width: 100%;
+  min-height: clamp(38rem, 78vh, 52rem);
+  padding: clamp(1.5rem, 5vw, 5rem);
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 12% 15%, rgba(c.$color02, 0.15), transparent 30rem),
+    radial-gradient(circle at 90% 85%, rgba(c.$color03, 0.14), transparent 26rem),
+    c.$color00;
+
+  &::before {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    content: "";
+    opacity: 0.35;
+    background-image:
+      linear-gradient(rgba(c.$color02, 0.08) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(c.$color02, 0.08) 1px, transparent 1px);
+    background-size: 42px 42px;
+    mask-image: linear-gradient(to bottom, black, transparent 85%);
+  }
+}
+
+.error404__panel {
+  display: grid;
+  align-self: center;
+  grid-template-columns: minmax(0, 1fr);
+  gap: clamp(2rem, 6vw, 6rem);
+  width: min(100%, 76rem);
+  margin-inline: auto;
+  padding: clamp(2rem, 5vw, 4.5rem);
+  border: 1px solid rgba(c.$color02, 0.15);
+  border-radius: clamp(1.5rem, 4vw, 3rem);
+  background: rgba(c.$color00, 0.82);
+  box-shadow: 0 2rem 5rem rgba(c.$color01, 0.12);
+  backdrop-filter: blur(14px);
+}
+
+.error404__content {
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.error404__eyebrow {
+  margin-bottom: 1rem;
+  padding: 0.45rem 0.8rem;
+  border: 1px solid rgba(c.$color02, 0.22);
+  border-radius: 999px;
+  color: c.$color02bis;
+  background: rgba(c.$color02, 0.08);
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.error404__title {
+  width: auto;
+  max-width: 15ch;
+  color: c.$color01;
+  font-size: clamp(2.3rem, 6vw, 4.75rem);
+  line-height: 0.98;
+  letter-spacing: -0.055em;
+  text-align: left;
+}
+
+.error404__text {
+  max-width: 58ch;
+  margin-top: 1.5rem;
+  color: c.$color04;
+  font-size: clamp(1rem, 1.8vw, 1.15rem);
+  line-height: 1.75;
+}
+
+.error404__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+  margin-top: 2rem;
+}
+
+.error404__button {
+  display: inline-flex;
+  min-height: 3.25rem;
+  padding: 0.85rem 1.2rem;
+  align-items: center;
+  justify-content: center;
+  gap: 0.65rem;
+  border: 1px solid c.$color02;
+  border-radius: 0.8rem;
+  font-family: c.$fuenteTextos;
+  font-size: 0.95rem;
+  font-weight: 750;
+  line-height: 1.2;
+  cursor: pointer;
+  transition: transform 180ms ease, box-shadow 180ms ease, color 180ms ease, background 180ms ease;
+
+  svg {
+    width: 1.2rem;
+    height: 1.2rem;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  &:hover {
+    transform: translateY(-2px);
+  }
+
+  &:focus-visible {
+    outline: 3px solid c.$color03;
+    outline-offset: 4px;
+  }
+}
+
+.error404__button--primary {
+  color: white;
+  background: c.$color02;
+  box-shadow: 0 0.8rem 1.6rem rgba(c.$color02, 0.25);
+
+  &:hover {
+    background: c.$color02bis;
+  }
+}
+
+.error404__button--secondary {
+  color: c.$color02bis;
+  background: transparent;
+
+  &:hover {
+    background: rgba(c.$color02, 0.08);
+  }
+}
+
+.error404__visual {
+  position: relative;
+  display: grid;
+  place-items: center;
+  min-height: 17rem;
+}
+
+.error404__glow {
+  position: absolute;
+  width: 64%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: rgba(c.$color02, 0.16);
+  filter: blur(36px);
+  animation: error404-pulse 4s ease-in-out infinite;
+}
+
+.error404__illustration {
+  z-index: 1;
+  width: min(100%, 35rem);
+  overflow: visible;
+  filter: drop-shadow(0 1.5rem 1.3rem rgba(c.$color01, 0.14));
+  animation: error404-float 5s ease-in-out infinite;
+}
+
+.error404__orbit {
+  fill: none;
+  stroke: rgba(c.$color02, 0.25);
+  stroke-width: 2;
+  stroke-dasharray: 8 12;
+}
+
+.error404__dot {
+  fill: c.$color03;
+}
+
+.error404__dot--one {
+  animation: error404-blink 2.5s ease-in-out infinite;
+}
+
+.error404__dot--two {
+  fill: c.$color02;
+  animation: error404-blink 2.5s 0.8s ease-in-out infinite;
+}
+
+.error404__window {
+  rect {
+    fill: c.$color01;
+    stroke: rgba(c.$color02, 0.45);
+    stroke-width: 2;
+  }
+
+  > path:not(.error404__code) {
+    stroke: rgba(c.$color00, 0.2);
+    stroke-width: 2;
+  }
+
+  circle:nth-of-type(1) { fill: #fb7185; }
+  circle:nth-of-type(2) { fill: c.$color03; }
+  circle:nth-of-type(3) { fill: #34d399; }
+}
+
+.error404__code {
+  fill: none;
+  stroke: c.$color00;
+  stroke-width: 10;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 220;
+  animation: error404-draw 3s ease-in-out infinite alternate;
+}
+
+.error404__number {
+  fill: c.$color02;
+  font-family: c.$fuenteTitulos;
+  font-size: 5.4rem;
+  font-weight: 750;
+  letter-spacing: 0.08em;
+}
+
+@media only screen and (min-width: c.$tablet) {
+  .error404__panel {
+    grid-template-columns: minmax(0, 1.08fr) minmax(18rem, 0.92fr);
+  }
+}
+
+@media only screen and (max-width: 36rem) {
+  .error404 {
+    padding: 1rem;
+  }
+
+  .error404__panel {
+    padding: 1.6rem;
+  }
+
+  .error404__actions,
+  .error404__button {
+    width: 100%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .error404 *,
+  .error404 *::before,
+  .error404 *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+@keyframes error404-float {
+  0%, 100% { transform: translateY(0) rotate(-0.4deg); }
+  50% { transform: translateY(-0.75rem) rotate(0.4deg); }
+}
+
+@keyframes error404-pulse {
+  0%, 100% { transform: scale(0.9); opacity: 0.65; }
+  50% { transform: scale(1.08); opacity: 1; }
+}
+
+@keyframes error404-blink {
+  0%, 100% { opacity: 0.35; transform: scale(0.75); transform-origin: center; }
+  50% { opacity: 1; transform: scale(1.2); transform-origin: center; }
+}
+
+@keyframes error404-draw {
+  from { stroke-dashoffset: 220; }
+  to { stroke-dashoffset: 0; }
+}

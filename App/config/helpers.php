@@ -66,14 +66,41 @@ function ruta_interna($ruta, string $fallback = '/showroom'): string
     return $path;
 }
 
-// RUTA apunta a los assets de Vite. Esta funcion obtiene la URL del servidor PHP.
+// El path de RUTA indica donde esta montada la aplicacion dentro del dominio.
+function app_base_path(): string
+{
+    $path = parse_url((string) env('RUTA', ''), PHP_URL_PATH);
+
+    if (!is_string($path) || $path === '' || $path === '/') {
+        return '';
+    }
+
+    return '/' . trim($path, '/');
+}
+
+function app_request_path(?string $requestUri): string
+{
+    $path = parse_url((string) $requestUri, PHP_URL_PATH);
+    $path = is_string($path) && $path !== '' ? '/' . ltrim($path, '/') : '/';
+    $basePath = app_base_path();
+
+    if ($basePath !== '' && ($path === $basePath || str_starts_with($path, $basePath . '/'))) {
+        $path = substr($path, strlen($basePath));
+    }
+
+    return $path === '' ? '/' : $path;
+}
+
+// Construye URLs de la aplicacion sobre el host PHP y respeta su punto de montaje.
 function app_url(string $path = ''): string
 {
     $https = ($_SERVER['HTTPS'] ?? '') !== '' && ($_SERVER['HTTPS'] ?? '') !== 'off';
     $scheme = $https ? 'https' : 'http';
     $host = $_SERVER['HTTP_HOST'] ?? 'localhost:3000';
+    $basePath = app_base_path();
+    $path = $path !== '' ? '/' . ltrim($path, '/') : '';
 
-    return $scheme . '://' . $host . ($path !== '' ? '/' . ltrim($path, '/') : '');
+    return $scheme . '://' . $host . $basePath . $path;
 }
 
 function enviarRespuestaAsincrona(string $mensaje, bool $fallo, string $param3): void
@@ -90,131 +117,68 @@ function enviarRespuestaAsincrona(string $mensaje, bool $fallo, string $param3):
 }
 
 // Construye el mapa idioma => ruta equivalente segun la posicion definida en config.php.
-
 function rutas_homologas(?string $rutaActual): array
-
 {
-
     $routes = $GLOBALS['app_routes'] ?? null;
 
- 
-
     // Permite usar el helper fuera del front controller sin duplicar la configuracion.
-
     if (!is_array($routes)) {
-
         static $routesConfig;
 
- 
-
         if (!is_array($routesConfig ?? null)) {
-
             $config = require app_path('config/config.php');
-
             $routesConfig = is_array($config['routes'] ?? null) ? $config['routes'] : [];
-
         }
 
- 
-
         $routes = $routesConfig;
-
     }
-
- 
 
     $posicion = 0;
 
- 
-
     if ($rutaActual !== null && trim($rutaActual) !== '') {
-
         $path = parse_url($rutaActual, PHP_URL_PATH);
 
- 
-
         if (is_string($path) && $path !== '' && $path !== '/') {
-
             $path = '/' . trim(urldecode($path), '/');
-
             $idiomaOrigen = explode('/', trim($path, '/'))[0] ?? '';
-
             $rutasOrigen = isset($routes[$idiomaOrigen]) && is_array($routes[$idiomaOrigen])
-
                 ? array_keys($routes[$idiomaOrigen])
-
                 : [];
-
             $posicionEncontrada = array_search($path, $rutasOrigen, true);
-
             $posicion = $posicionEncontrada === false ? null : $posicionEncontrada;
-
         }
-
     }
-
- 
 
     $rutasHomologas = [];
 
- 
-
     foreach ($routes as $idioma => $rutasIdioma) {
-
         if (!is_array($rutasIdioma)) {
-
             continue;
-
         }
-
- 
 
         $rutasIdioma = array_keys($rutasIdioma);
 
- 
-
         if ($posicion !== null && array_key_exists($posicion, $rutasIdioma)) {
-
             $rutasHomologas[$idioma] = $rutasIdioma[$posicion];
-
             continue;
-
         }
 
- 
-
         $ruta404 = '/' . $idioma . '/404';
-
         $rutasHomologas[$idioma] = in_array($ruta404, $rutasIdioma, true)
-
             ? $ruta404
-
             : ($rutasIdioma[0] ?? '/' . $idioma);
-
     }
 
- 
-
     return $rutasHomologas;
-
 }
-
- 
 
 function ruta_homologa(?string $rutaActual, string $idiomaDestino): string
-
 {
-
     $rutasHomologas = rutas_homologas($rutaActual);
 
- 
-
     return $rutasHomologas[$idiomaDestino]
-
         ?? ($rutasHomologas[array_key_first($rutasHomologas)] ?? '/');
-
 }
-
 
 function route_url(string $path = '/'): string
 {
@@ -242,10 +206,7 @@ function route_url(string $path = '/'): string
 
 function url(string $path = '/'): string
 {
-    $base = rtrim((string) env('RUTA', ''), '/');
-    $path = route_url($path);
-
-    return e(($base !== '' ? $base : '') . $path);
+    return e(app_url(route_url($path)));
 }
 
 function asset(string $path): string
@@ -259,11 +220,13 @@ function asset(string $path): string
 function vite_manifest_path(): string
 {
     // El directorio publico puede llamarse dist, www, public_html, etc.
-    $publicRoot = trim((string) ($_SERVER['DOCUMENT_ROOT'] ?? ''));
+    $frontController = trim((string) ($_SERVER['SCRIPT_FILENAME'] ?? ''));
+    $publicRoot = $frontController !== '' && is_file($frontController)
+        ? dirname($frontController)
+        : trim((string) ($_SERVER['DOCUMENT_ROOT'] ?? ''));
 
     if ($publicRoot === '') {
-        $frontController = (string) ($_SERVER['SCRIPT_FILENAME'] ?? '');
-        $publicRoot = $frontController !== '' ? dirname($frontController) : root_path();
+        $publicRoot = root_path();
     }
 
     return rtrim($publicRoot, '/\\')
