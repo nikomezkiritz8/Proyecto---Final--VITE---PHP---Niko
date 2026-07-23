@@ -20,7 +20,7 @@
         <p class="header02__eyebrow">PROYECTOS</p>
         <h1 class="header02__title">Lo que he construido</h1>
         <p class="header02__text">Una selección de aplicaciones web y proyectos donde he aplicado HTML, CSS, JavaScript, PHP y otras tecnologías para crear soluciones funcionales y modernas.</p>
-        <a href="/es/contacto" class="boton">Ponte en contacto</a>
+        <a href="<?= url('/es/contacto') ?>" class="boton">Ponte en contacto</a>
         </div>
     </header>
 
@@ -54,9 +54,9 @@
             </ul>
             <img src="<?= asset('assets/img/views/otrohero.avif') ?>" alt="portfolio" title ="portfolio">
             <div class="contenedor-botones">
-              <a href="/es/mis-proyectos" class="boton">Ver proyecto</a>
-              <a href="/es/mis-proyectos" class="boton">Código</a>
-              <a href="/es/mis-proyectos" class="boton">Caso de estudio</a>
+              <a href="<?= url('/es/mis-proyectos') ?>" class="boton">Ver proyecto</a>
+              <a href="<?= url('/es/mis-proyectos') ?>" class="boton">Código</a>
+              <a href="<?= url('/es/mis-proyectos') ?>" class="boton">Caso de estudio</a>
             </div>
             
           </div>
@@ -92,9 +92,9 @@
             <img src="<?= asset('assets/img/views/casahorizonte.avif') ?>" alt="página de arquitectura" title ="página de arquitectura" >
             <div class="contenedor-botones">
 
-              <a href="/es/mis-proyectos" class="boton">Ver proyecto</a>
-              <a href="/es/mis-proyectos" class="boton">Código</a>
-              <a href="/es/mis-proyectos" class="boton">Caso de estudio</a>
+              <a href="<?= url('/es/mis-proyectos') ?>" class="boton">Ver proyecto</a>
+              <a href="<?= url('/es/mis-proyectos') ?>" class="boton">Código</a>
+              <a href="<?= url('/es/mis-proyectos') ?>" class="boton">Caso de estudio</a>
             </div>
 
           </div>
@@ -130,9 +130,9 @@
 
             <img src="<?= asset('assets/img/views/japo.avif') ?>" alt="ecommerce japones" title ="ecommerce japones">
             <div class="contenedor-botones">
-              <a href="/es/mis-proyectos" class="boton">Ver proyecto</a>
-              <a href="/es/mis-proyectos" class="boton">Código</a>
-              <a href="/es/mis-proyectos" class="boton">Caso de estudio</a>
+              <a href="<?= url('/es/mis-proyectos') ?>" class="boton">Ver proyecto</a>
+              <a href="<?= url('/es/mis-proyectos') ?>" class="boton">Código</a>
+              <a href="<?= url('/es/mis-proyectos') ?>" class="boton">Caso de estudio</a>
             </div>
             
           </div>

@@ -593,7 +593,7 @@
                         <div class="boton" id="boton_modal_envio">Escribir otra consulta</div>
                     </div>
 
-                    <form id="idForAjax" action="/app/artForm02" method="post">
+                    <form id="idForAjax" action="<?= e(app_url('/app/artForm02')) ?>" method="post">
                         
                         <p class="error" id="errorForm02"></p>
 

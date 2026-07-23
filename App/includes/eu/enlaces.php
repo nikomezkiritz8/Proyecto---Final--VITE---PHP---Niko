@@ -5,28 +5,28 @@
 ?>
 <ul class="enlaces01">
   <li class="enlaces01__item">
-    <a class="enlaces01__link" href="/eu">
+    <a class="enlaces01__link" href="<?= url('/eu') ?>">
       <img class="enlaces01__icon" src="<?= asset('assets/img/icons/home-solid.svg') ?>" alt="etxea" title="etxea">
       <span>Hasiera</span>
     </a>
   </li>
 
   <li class="enlaces01__item">
-    <a class="enlaces01__link" href="/eu/kontaktua">
+    <a class="enlaces01__link" href="<?= url('/eu/kontaktua') ?>">
       <img class="enlaces01__icon" src="<?= asset('assets/img/icons/contact.svg') ?>" alt="kontaktua" title="kontaktua">
       <span>Kontaktua</span>
     </a>
   </li>
 
   <li class="enlaces01__item">
-    <a class="enlaces01__link" href="/eu/nere-proiektuak">
+    <a class="enlaces01__link" href="<?= url('/eu/nere-proiektuak') ?>">
       <img class="enlaces01__icon" src="<?= asset('assets/img/icons/proyect.svg') ?>" alt="proiektuak" title="proiektuak">
       <span>Proiektuak</span>
     </a>
   </li>
 
   <!-- <li class="enlaces01__item">
-    <a class="enlaces01__link" href="/showroom">
+    <a class="enlaces01__link" href="<?= url('/showroom') ?>">
       <img class="enlaces01__icon" src="<?= asset('assets/img/icons/grid.svg') ?>" alt="">
       <span>Showroom</span>
     </a>

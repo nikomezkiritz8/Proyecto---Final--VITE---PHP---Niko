@@ -250,14 +250,18 @@
     <?php require app_path('includes/eu/nav.php'); ?>
 
     <header class="header01">
-      <img class="header01__media" src="<?= asset('assets/img/views/hero-bg.avif') ?>" alt="Donostian programatzen" title=" Donostian programatzen">
+      <video class="header01__media" autoplay muted loop playsinline preload="metadata" poster="<?= asset('assets/img/views/hero-bg.avif') ?>" aria-label="Donostian programatzen">
+        <source src="<?= asset('assets/video/hero-bg.webm') ?>" type="video/webm">
+        <source src="<?= asset('assets/video/hero-bg.mp4') ?>" type="video/mp4">
+        <img src="<?= asset('assets/img/views/hero-bg.avif') ?>" alt="Donostian programatzen" title="Donostian programatzen">
+      </video>
       <div class="header01__content">
         <p class="header01__eyebrow"></p>
         <h1>Front-End web garatzailea</h1>
         <p class="header01__text">Webgune azkarrak eta modernoak sortzen ditut, bisitariak bezero bihurtzera bideratuta.</p>
         <p class="header01__text">HTML, CSS, JavaScript, PHP eta Vite teknologietan espezializatua.</p>
-        <a href="/eu/nere-proiektuak" class="boton">Ikusi proiektuak</a>
-        <a href="/eu/kontaktua" class="boton">Kontaktatu</a>
+        <a href="<?= url('/eu/nere-proiektuak') ?>" class="boton">Ikusi proiektuak</a>
+        <a href="<?= url('/eu/kontaktua') ?>" class="boton">Kontaktatu</a>
       </div>
     </header>
 
@@ -543,7 +547,7 @@
                     <p>Ikaskuntza kolektiboa, komunikazioa eta kode garbia lehenesten dituzten talde dinamikoetako kide izatea.</p>
                     <p>Teknologia modernoetan espezializatzea (hala nola Frontend frameworketan sakontzea edo AIaren integrazioa esploratzea), interfaze azkarragoak eta intuitiboagoak sortzeko.</p>
                     <p>Benetako erronkei aurre egitea, ideia konplexuak edozein erabiltzailerentzat eskuragarri eta erakargarri izango diren web esperientziatara eramaten lagunduz.</p>
-                    <a href="/eu/kontaktua" title="" class="boton">Hitz egiten dugu?</a>
+                    <a href="<?= url('/eu/kontaktua') ?>" title="" class="boton">Hitz egiten dugu?</a>
                 </div>     
             </article>
         
@@ -573,7 +577,7 @@
                     <h3>Portfolio pertsonala</h3>
                     <p>Nire aurkezpen-gutun digitala. Irisgarritasuna, errendimendu akasgabea eta diseinu interaktiboa harmonian bizi daitezkeela frogatzeko diseinatua.</p>
                     <p>Tech: HTML, SCSS, PHP, Vite</p>
-                    <a href="/eu/nere-proiektuak" class="boton">Ikusi proiektua</a> 
+                    <a href="<?= url('/eu/nere-proiektuak') ?>" class="boton">Ikusi proiektua</a> 
                     
                 </div>
             </article>
@@ -597,7 +601,7 @@
                     <h3>Arkitektura lan baten landing page-a</h3>
                     <p>Donostiako arkitektura-estudio garaikide baterako kontzeptu bisual eta funtzionala. Lerro zuzenetan, egitura-ordenan eta dotoretasun monokromatikoan inspiratua.</p>
                     <p>Tech: HTML, CSS</p>
-                    <a href="/eu/nere-proiektuak" class="boton">Ikusi proiektua</a>
+                    <a href="<?= url('/eu/nere-proiektuak') ?>" class="boton">Ikusi proiektua</a>
                 </div>
             </article>
 
@@ -620,7 +624,7 @@
                     <h3>Denda japoniar baten online denda</h3>
                     <p>KOKOROko tea eta intsentsua inportatzen dituen lineako boutique baten erakustaldia. Soiltasun minimalista eta dinamismo komertziala uztartzen ditu.</p>
                     <p>Tech: WordPress</p>
-                    <a href="/eu/nere-proiektuak" class="boton">Ikusi proiektua</a>
+                    <a href="<?= url('/eu/nere-proiektuak') ?>" class="boton">Ikusi proiektua</a>
                 </div>
             </article>
 
@@ -644,7 +648,7 @@
                     <h3>Zure enpresaren webgunea?</h3>
                     <p>Proiekturen bat duzu buruan? Oso gogoko dut behar berrietara egokitzea. Landing page-etatik hasi eta gune korporatiboetaraino, zure presentzia digitala eraikitzen lagun zaitzaket.</p>
                     <p>Tech: A medida</p>
-                    <a href="/eu/kontaktua" class="boton">Kontaktatu</a>
+                    <a href="<?= url('/eu/kontaktua') ?>" class="boton">Kontaktatu</a>
                 </div>
             </article>
 

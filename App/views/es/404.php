@@ -22,7 +22,7 @@
             La dirección no existe, ha cambiado o quizá contiene un error. Puedes volver al inicio o regresar a la página anterior.
           </p>
           <div class="error404__actions" aria-label="Opciones para continuar">
-            <a class="error404__button error404__button--primary" href="/es">
+            <a class="error404__button error404__button--primary" href="<?= url('/es') ?>">
               <svg aria-hidden="true" viewBox="0 0 24 24">
                 <path d="M3 11.5 12 4l9 7.5M5.5 10v10h13V10M9.5 20v-6h5v6"/>
               </svg>

@@ -255,14 +255,18 @@
     <?php require app_path('includes/es/nav.php'); ?>
 
     <header class="header01">
-      <img class="header01__media" src="<?= asset('assets/img/views/hero-bg.avif') ?>" alt="Programando en Donosti" title="Programando en Donosti">
+      <video class="header01__media" autoplay muted loop playsinline preload="metadata" poster="<?= asset('assets/img/views/hero-bg.avif') ?>" aria-label="Programando en Donosti">
+        <source src="<?= asset('assets/video/hero-bg.webm') ?>" type="video/webm">
+        <source src="<?= asset('assets/video/hero-bg.mp4') ?>" type="video/mp4">
+        <img src="<?= asset('assets/img/views/hero-bg.avif') ?>" alt="Programando en Donosti" title="Programando en Donosti">
+      </video>
       <div class="header01__content">
         <p class="header01__eyebrow"></p>
         <h1>Desarrollador Web Front-End</h1>
         <p class="header01__text">Creo páginas rápidas, modernas y enfocadas en convertir visitantes en clientes.</p>
         <p class="header01__text">Especializado en HTML, CSS, JavaScript, PHP y Vite.</p>
-        <a href="/es/mis-proyectos" class="boton">Ver proyectos</a>
-        <a href="/es/contacto" class="boton">Contactar</a>
+        <a href="<?= url('/es/mis-proyectos') ?>" class="boton">Ver proyectos</a>
+        <a href="<?= url('/es/contacto') ?>" class="boton">Contactar</a>
       </div>
     </header>
 
@@ -548,7 +552,7 @@
                     <p>Formar parte de equipos dinámicos donde el aprendizaje mutuo, la comunicación y el código limpio sean la prioridad.</p>
                     <p>Especializarme en tecnologías modernas (como profundizar en frameworks de Frontend o explorar la integración de IA) para crear interfaces más rápidas e intuitivas.</p>
                     <p>Afrontar retos reales, ayudando a traducir ideas complejas en experiencias web accesibles y atractivas para cualquier usuario.</p>
-                    <a href="/es/contacto" title="" class="boton">¿Hablamos?</a>
+                    <a href="<?= url('/es/contacto') ?>" title="" class="boton">¿Hablamos?</a>
                 </div>     
             </article>
         
@@ -578,7 +582,7 @@
                     <h3>Portfolio personal</h3>
                     <p>Mi carta de presentación digital. Diseñada para demostrar que la accesibilidad, el rendimiento impecable y el diseño interactivo pueden convivir en armonía.</p>
                     <p>Tech: HTML, SCSS, PHP, Vite</p>
-                    <a href="/es/mis-proyectos" class="boton">Ver proyecto</a> 
+                    <a href="<?= url('/es/mis-proyectos') ?>" class="boton">Ver proyecto</a> 
                     
                 </div>
             </article>
@@ -602,7 +606,7 @@
                     <h3>Landing page de arquitectura</h3>
                     <p>Concepto visual y funcional para un estudio de arquitectura contemporáneo de Donostia. Inspirado en líneas rectas, orden estructural y elegancia monocromática.</p>
                     <p>Tech: HTML, CSS</p>
-                    <a href="/es/mis-proyectos" class="boton">Ver Proyecto</a>
+                    <a href="<?= url('/es/mis-proyectos') ?>" class="boton">Ver Proyecto</a>
                 </div>
             </article>
 
@@ -625,7 +629,7 @@
                     <h3>Ecommerce de una tienda japónesa</h3>
                     <p>Demostración de una boutique online dedicada a la importación de té e inciensos de KOKORO. Combina sobriedad minimalista y dinamismo comercial.</p>
                     <p>Tech: WordPress</p>
-                    <a href="/es/mis-proyectos" class="boton">Ver proyecto</a>
+                    <a href="<?= url('/es/mis-proyectos') ?>" class="boton">Ver proyecto</a>
                 </div>
             </article>
 
@@ -650,7 +654,7 @@
                     <h3>¿La web de tu empresa?</h3>
                     <p>¿Tienes un proyecto en mente? Me encanta adaptarme a nuevas necesidades. Desde landing pages hasta sitios corporativos, puedo ayudarte a construir tu presencia digital.</p>
                     <p>Tech: A medida</p>
-                    <a href="/es/contacto" class="boton">Contactar</a>
+                    <a href="<?= url('/es/contacto') ?>" class="boton">Contactar</a>
                 </div>
             </article>
 

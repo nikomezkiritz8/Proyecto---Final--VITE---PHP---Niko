@@ -21,7 +21,7 @@
         <p class="header02__eyebrow">PROIEKTUAK</p>
         <h1 class="header02__title">Nire sorkuntzak</h1>
         <p class="header02__text">HTML, CSS, JavaScript, PHP eta beste teknologia batzuk erabiliz konponbide funtzional eta modernoak sortzeko garatu ditudan web aplikazio eta proiektuen hautaketa bat.</p>
-        <a href="/eu/kontaktua" class="boton">Kontaktuan jarri</a>
+        <a href="<?= url('/eu/kontaktua') ?>" class="boton">Kontaktuan jarri</a>
         </div>
     </header>
 
@@ -55,9 +55,9 @@
             </ul>
             <img src="<?= asset('assets/img/views/otrohero.avif') ?>" alt="portfolio" title ="portfolio">
             <div class="contenedor-botones">
-              <a href="/eu/nere-proiektuak" class="boton">Ikusi proiektua</a>
-              <a href="/eu/nere-proiektuak" class="boton">Kodea</a>
-              <a href="/eu/nere-proeiktuak" class="boton">Kasuen azterketa</a>
+              <a href="<?= url('/eu/nere-proiektuak') ?>" class="boton">Ikusi proiektua</a>
+              <a href="<?= url('/eu/nere-proiektuak') ?>" class="boton">Kodea</a>
+              <a href="<?= url('/eu/nere-proeiktuak') ?>" class="boton">Kasuen azterketa</a>
             </div>
             
           </div>
@@ -93,9 +93,9 @@
             <img src="<?= asset('assets/img/views/casahorizonte.avif') ?>" alt="página de arquitectura" title ="página de arquitectura" >
             <div class="contenedor-botones">
 
-              <a href="/eu/nere-proiektuak" class="boton">Ikusi proiektua</a>
-              <a href="/eu/nere-proiektuak" class="boton">Kodea</a>
-              <a href="/eu/nere-proiektuak" class="boton">Kasuen azterketa</a>
+              <a href="<?= url('/eu/nere-proiektuak') ?>" class="boton">Ikusi proiektua</a>
+              <a href="<?= url('/eu/nere-proiektuak') ?>" class="boton">Kodea</a>
+              <a href="<?= url('/eu/nere-proiektuak') ?>" class="boton">Kasuen azterketa</a>
             </div>
 
           </div>
@@ -131,9 +131,9 @@
 
             <img src="<?= asset('assets/img/views/japo.avif') ?>" alt="ecommerce japones" title ="ecommerce japones">
             <div class="contenedor-botones">
-              <a href="/eu/nere-proiektuak" class="boton">Ikusi proiektua</a>
-              <a href="/eu/nere-proiektuak" class="boton">Kodea</a>
-              <a href="/eu/nere-proiektuak" class="boton">Kasuen azterketa</a>
+              <a href="<?= url('/eu/nere-proiektuak') ?>" class="boton">Ikusi proiektua</a>
+              <a href="<?= url('/eu/nere-proiektuak') ?>" class="boton">Kodea</a>
+              <a href="<?= url('/eu/nere-proiektuak') ?>" class="boton">Kasuen azterketa</a>
             </div>
             
           </div>

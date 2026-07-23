@@ -20,7 +20,7 @@
         <p class="header02__eyebrow">Contacto</p>
         <h1 class="header02__title">Disponible para nuevas oportunidades como desarrollador web junior</h1>
         <p class="header02__text">¿Buscas un desarrollador junior con atención al detalle, código limpio y ganas de seguir aprendiendo? Estaré encantado de hablar contigo.</p>
-        <a href="/es/contacto" class="boton">Ponte en contacto</a>
+        <a href="<?= url('/es/contacto') ?>" class="boton">Ponte en contacto</a>
         </div>
     </header>
 

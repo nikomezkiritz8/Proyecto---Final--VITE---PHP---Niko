@@ -4,7 +4,7 @@
 ?>
 <nav class="nav01" data-nav01>
   <div class="nav01__inner">
-    <a class="nav01__brand" href="/es" aria-label="Ir al inicio">
+    <a class="nav01__brand" href="<?= url('/es') ?>" aria-label="Ir al inicio">
       <span class="nav01__logo" aria-hidden="true">
         <svg xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 64 64"
@@ -79,8 +79,8 @@
 
         <div class="nav01__langs" aria-label="Idiomas">
           <!-- Para mantener el ejemplo sencillo, cada idioma enlaza a su inicio. -->
-          <a class="nav01__lang is-active" href="<?= e(ruta_homologa($url ?? null, 'es')) ?>" lang="es" hreflang="es" aria-current="true">ES</a>
-          <a class="nav01__lang" href="<?= e(ruta_homologa($url ?? null, 'eu')) ?>" lang="eu" hreflang="eu">EU</a>          
+          <a class="nav01__lang is-active" href="<?= url(ruta_homologa($url ?? null, 'es')) ?>" lang="es" hreflang="es" aria-current="true">ES</a>
+          <a class="nav01__lang" href="<?= url(ruta_homologa($url ?? null, 'eu')) ?>" lang="eu" hreflang="eu">EU</a>          
         </div>
       </div>
     </div>

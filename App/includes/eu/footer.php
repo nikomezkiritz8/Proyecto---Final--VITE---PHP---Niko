@@ -16,9 +16,9 @@
     <section class="footer01__column" aria-labelledby="footer01-legal-title-eu">
       <h2 class="footer01__title" id="footer01-legal-title-eu">Legezkoa</h2>
       <ul class="footer01__list">
-        <li><a class="footer01__link" href="/eu/lege-oharra#aviso-legal">Lege oharra</a></li>
-        <li><a class="footer01__link" href="/eu/lege-oharra#politica-privacidad">Pribatutasun politika</a></li>
-        <li><a class="footer01__link" href="/eu/lege-oharra#gestion-cookies">Cookieen kudeaketa</a></li>
+        <li><a class="footer01__link" href="<?= url('/eu/lege-oharra#aviso-legal') ?>">Lege oharra</a></li>
+        <li><a class="footer01__link" href="<?= url('/eu/lege-oharra#politica-privacidad') ?>">Pribatutasun politika</a></li>
+        <li><a class="footer01__link" href="<?= url('/eu/lege-oharra#gestion-cookies') ?>">Cookieen kudeaketa</a></li>
       </ul>
     </section>
 

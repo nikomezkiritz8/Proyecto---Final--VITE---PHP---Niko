@@ -22,7 +22,7 @@
             Helbidea ez dago, aldatu egin da edo agian akatsen bat du. Hasierara itzul zaitezke edo aurreko orrialdera joan.
           </p>
           <div class="error404__actions" aria-label="Jarraitzeko aukerak">
-            <a class="error404__button error404__button--primary" href="/eu">
+            <a class="error404__button error404__button--primary" href="<?= url('/eu') ?>">
               <svg aria-hidden="true" viewBox="0 0 24 24">
                 <path d="M3 11.5 12 4l9 7.5M5.5 10v10h13V10M9.5 20v-6h5v6"/>
               </svg>
