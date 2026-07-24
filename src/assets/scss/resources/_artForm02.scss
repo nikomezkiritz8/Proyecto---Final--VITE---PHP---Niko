@@ -100,12 +100,17 @@ $bordeRadio: 10px;
                     font-size: $tamanoFuente;
                 }
                 .boton{
-                    // margin: 0 auto;
                     position: relative;
                     left: 50%;
                     transform: translateX(-50%);
                     margin-top: 1rem;
                     width: 200px;
+                    &:hover{
+                        transform: translateX(-50%) translateY(-3px);
+                    }
+                    &:active{
+                        transform: translateX(-50%) scale(0.97);
+                    }
                 }
                 .horizontal{
                     margin: 0.5rem;
@@ -134,10 +139,6 @@ $bordeRadio: 10px;
                     border-radius: 50px;
                 }
                 .boton{
-                    padding: 0.5rem 1.5rem;
-                    font-size: clamp(1rem, 3vw, 1.3rem);
-                    border: none;
-                    border-radius: 2px;
                     text-align: center;
                 }
                 cursor: pointer;

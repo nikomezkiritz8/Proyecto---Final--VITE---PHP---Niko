@@ -20,7 +20,7 @@
         <p class="header02__eyebrow">Kontaktua</p>
         <h1 class="header02__title">Web garatzaile junior gisa lan-aukera berrietarako prest.</h1>
         <p class="header02__text">Xehetasunei arreta jartzen dien, kode garbia idazten duen eta ikasten jarraitzeko gogoa duen junior web garatzaile baten bila zabiltza? Pozik hitz egingo dut zurekin.</p>
-        <a href="<?= url('/eu/kontaktua') ?>" class="boton">Kontaktuan jar zaitez</a>
+        <a href="<?= url('/eu/kontaktua') ?>#idForAjax" class="boton">Kontaktuan jar zaitez</a>
         </div>
     </header>
 

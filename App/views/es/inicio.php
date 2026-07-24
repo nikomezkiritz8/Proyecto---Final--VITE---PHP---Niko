@@ -546,7 +546,7 @@
             <!-- Qué me gustaría hacer -->
             <article class="art06">
                 <div>
-                    <h3>¿QUE ME GUSTARIA HACER?</h3>
+                    <h3>¿QUÉ ME GUSTARÍA HACER?</h3>
                     <p>Busco integrarme en proyectos desafiantes donde pueda aportar mi iniciativa y seguir evolucionando como desarrollador. Mi meta es diseñar soluciones digitales que no solo funcionen a la perfección, sino que también dejen huella.</p>
 
                     <p>Formar parte de equipos dinámicos donde el aprendizaje mutuo, la comunicación y el código limpio sean la prioridad.</p>

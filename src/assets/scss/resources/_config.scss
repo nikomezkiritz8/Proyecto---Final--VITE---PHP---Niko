@@ -142,21 +142,79 @@ a{
 }
 
 .boton{
-    padding: 0.7rem 4rem;
-    color: $color00;  
-    background-color: $color02;
-    border-radius: 5px;
-    letter-spacing: 3px;
-    font-weight: 600;
-    border: 1px solid $color00;
-    transition: 0.3s;
-    &:hover{
-        background-color: $color00;
-        color:$color02;
-        border-color: $color02;
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    min-height: 3.25rem;
+    padding: 0.85rem 2rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.65rem;
+    min-width: 280px;
+    color: $color00;
+    background: linear-gradient(135deg, $color02 0%, $color02bis 100%);
+    border: 1px solid rgba($color00, 0.35);
+    border-radius: 0.8rem;
+    box-shadow: 0 0.75rem 1.5rem rgba($color02, 0.25), inset 0 1px 0 rgba($color00, 0.22);
+    font-family: $fuenteTextos;
+    font-size: 0.95rem;
+    line-height: 1.2;
+    letter-spacing: 0.08em;
+    font-weight: 750;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 220ms ease, box-shadow 220ms ease, border-color 220ms ease, color 220ms ease;
+
+    &::before{
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: -60%;
+        left: -35%;
+        width: 25%;
+        height: 220%;
+        background: linear-gradient(90deg, transparent, rgba($color00, 0.55), transparent);
+        transform: rotate(22deg) translateX(-250%);
+        transition: transform 650ms ease;
+        pointer-events: none;
     }
+
+    &:hover{
+        color: $color00;
+        border-color: rgba($color03, 0.9);
+        transform: translateY(-3px);
+        box-shadow: 0 1rem 2rem rgba($color02bis, 0.34), 0 0 0 3px rgba($color03, 0.13), inset 0 1px 0 rgba($color00, 0.28);
+
+        &::before{
+            transform: rotate(22deg) translateX(650%);
+        }
+    }
+
+    &:focus-visible{
+        outline: 3px solid $color03;
+        outline-offset: 4px;
+    }
+
     &:active{
-        transform: scale(0.95);
+        transform: translateY(0) scale(0.97);
+        box-shadow: 0 0.35rem 0.8rem rgba($color02bis, 0.25);
+    }
+
+    &:disabled,
+    &[aria-disabled="true"]{
+        opacity: 0.55;
+        cursor: not-allowed;
+        transform: none;
+        box-shadow: none;
+    }
+
+    @media (prefers-reduced-motion: reduce){
+        transition: none;
+
+        &::before{
+            display: none;
+        }
     }
 }
 

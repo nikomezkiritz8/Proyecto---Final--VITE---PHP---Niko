@@ -191,8 +191,24 @@ $tamanoControl: 2.75rem;
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        background-color: c.$color01;
+        color: c.$color00;
+        background: linear-gradient(135deg, c.$color02, c.$color02bis);
+        border: 1px solid rgba(c.$color03, 0.45);
+        box-shadow: 0 0.55rem 1.2rem rgba(c.$color02bis, 0.22);
         cursor: pointer;
+        transition: transform 220ms ease, box-shadow 220ms ease, border-color 220ms ease;
+        &:hover{
+            transform: translateY(-2px);
+            border-color: c.$color03;
+            box-shadow: 0 0.8rem 1.5rem rgba(c.$color02bis, 0.3), 0 0 0 3px rgba(c.$color03, 0.12);
+        }
+        &:focus-visible{
+            outline: 3px solid c.$color03;
+            outline-offset: 3px;
+        }
+        &:active{
+            transform: scale(0.95);
+        }
         @media only screen and (min-width:c.$desktop){
             display: none;
         }

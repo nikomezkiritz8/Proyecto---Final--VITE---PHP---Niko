@@ -56,7 +56,7 @@ try {
     $mail->Body = $cuerpo;
     $mail->AltBody = $cuerpoTexto ?? 'Mensaje enviado desde el formulario de la web.';
 
-    $logo = $basePath . '/App/app/img/logo.png';
+    $logo = $basePath . '/App/app/img/logo-niko-studio.svg';
     if (is_file($logo)) {
         $mail->addEmbeddedImage($logo, 'logo');
     }

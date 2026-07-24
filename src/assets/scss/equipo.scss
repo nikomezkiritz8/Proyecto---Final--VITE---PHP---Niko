@@ -9,6 +9,22 @@
 @use "./resources/artForm02";
 @use "./resources/moduloLoader01";
 
+.art14{
+    >div{
+        h3{
+            font-size: initial;
+        }
+
+        span{
+
+            color: c.$color03;
+            font-weight: bold;
+            font-size: clamp(1rem, 1vw, 3rem);
+        }
+    }
+}
+
+
 .focus-player{
 
     position:fixed;
@@ -152,13 +168,3 @@
 }
 
 
-
-
-
-.art14{
-    >div{
-        h3{
-            font-size: initial;
-        }
-    }
-}

@@ -1,6 +1,6 @@
         <section>
             <!-- artForm02 ajax -->
-            <article class="artForm02">          
+            <article class="artForm02">
 
                 <h2>CONTACTA CONMIGO</h2>
                 <div>
